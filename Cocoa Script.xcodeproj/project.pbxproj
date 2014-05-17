@@ -321,6 +321,204 @@
 		CCF4DBE118296AB800ACB9EC /* Mocha.m in Sources */ = {isa = PBXBuildFile; fileRef = CC66D861181A2AE10039A0A5 /* Mocha.m */; };
 		CCF4DBE218296AB800ACB9EC /* MochaRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = CC66D865181A2AE10039A0A5 /* MochaRuntime.m */; };
 		CCF68F1E0F4E3E4F00925FCA /* JSTalkDocument.icns in Resources */ = {isa = PBXBuildFile; fileRef = CCF68F1D0F4E3E4F00925FCA /* JSTalkDocument.icns */; };
+		D156E91E19272523008704CC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D156E91D19272523008704CC /* Foundation.framework */; };
+		D156E92C19272523008704CC /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D156E92B19272523008704CC /* XCTest.framework */; };
+		D156E92D19272523008704CC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D156E91D19272523008704CC /* Foundation.framework */; };
+		D156E92F19272523008704CC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D156E92E19272523008704CC /* UIKit.framework */; };
+		D156E93219272523008704CC /* libCocoaScript.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D156E91C19272523008704CC /* libCocoaScript.a */; };
+		D156E93819272523008704CC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D156E93619272523008704CC /* InfoPlist.strings */; };
+		D156E93A19272523008704CC /* CocoaScriptTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D156E93919272523008704CC /* CocoaScriptTests.m */; };
+		D156E94A19272581008704CC /* libffi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D156E94719272578008704CC /* libffi.a */; };
+		D156E94D19272AD6008704CC /* COSScript+Spelunking.h in Headers */ = {isa = PBXBuildFile; fileRef = CCF056161849A23C000C56F7 /* COSScript+Spelunking.h */; };
+		D156E94E19272AE8008704CC /* COScript.h in Headers */ = {isa = PBXBuildFile; fileRef = CC66D816181A2A710039A0A5 /* COScript.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D156E95019272B03008704CC /* COSInterval.h in Headers */ = {isa = PBXBuildFile; fileRef = CCA1A533183EA86E000159B3 /* COSInterval.h */; };
+		D156E95219272B03008704CC /* COScript+Interval.h in Headers */ = {isa = PBXBuildFile; fileRef = CC847AFA183EE02300436C38 /* COScript+Interval.h */; };
+		D156E95419272B03008704CC /* COSCIImageAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = CC66D828181A2A9B0039A0A5 /* COSCIImageAdditions.h */; };
+		D156E95E19272B03008704CC /* COSQuickCIFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = CC66D832181A2A9B0039A0A5 /* COSQuickCIFilter.h */; };
+		D156E96019272B03008704CC /* MOBridgeSupportController.h in Headers */ = {isa = PBXBuildFile; fileRef = CC66D840181A2AB10039A0A5 /* MOBridgeSupportController.h */; };
+		D156E96219272B03008704CC /* MOProtocolDescription_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = CC66D895181A2B0A0039A0A5 /* MOProtocolDescription_Private.h */; };
+		D156E96319272B03008704CC /* MOProtocolDescription.h in Headers */ = {isa = PBXBuildFile; fileRef = CC66D896181A2B0A0039A0A5 /* MOProtocolDescription.h */; };
+		D156E96919272B03008704CC /* TDCollectionParser.h in Headers */ = {isa = PBXBuildFile; fileRef = CC66D768181A2A460039A0A5 /* TDCollectionParser.h */; };
+		D156E96B19272B03008704CC /* TDComment.h in Headers */ = {isa = PBXBuildFile; fileRef = CC66D76A181A2A460039A0A5 /* TDComment.h */; };
+		D156E96D19272B03008704CC /* TDCommentState.h in Headers */ = {isa = PBXBuildFile; fileRef = CC66D76C181A2A460039A0A5 /* TDCommentState.h */; };
+		D156E96F19272B03008704CC /* TDMultiLineCommentState.h in Headers */ = {isa = PBXBuildFile; fileRef = CC66D778181A2A460039A0A5 /* TDMultiLineCommentState.h */; };
+		D156E97119272B04008704CC /* TDSingleLineCommentState.h in Headers */ = {isa = PBXBuildFile; fileRef = CC66D793181A2A460039A0A5 /* TDSingleLineCommentState.h */; };
+		D156E97819272B04008704CC /* COSPreprocessor.h in Headers */ = {isa = PBXBuildFile; fileRef = CC66D81C181A2A710039A0A5 /* COSPreprocessor.h */; };
+		D156E97A19272B54008704CC /* MOBridgeSupportLibrary.h in Headers */ = {isa = PBXBuildFile; fileRef = CC66D842181A2AB10039A0A5 /* MOBridgeSupportLibrary.h */; };
+		D156E97B19272B55008704CC /* MOBridgeSupportParser.h in Headers */ = {isa = PBXBuildFile; fileRef = CC66D844181A2AB10039A0A5 /* MOBridgeSupportParser.h */; };
+		D156E97C19272B55008704CC /* MOBridgeSupportSymbol.h in Headers */ = {isa = PBXBuildFile; fileRef = CC66D846181A2AB10039A0A5 /* MOBridgeSupportSymbol.h */; };
+		D156E97D19272B55008704CC /* NSArray+MochaAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = CC66D850181A2ABF0039A0A5 /* NSArray+MochaAdditions.h */; };
+		D156E97E19272B55008704CC /* NSDictionary+MochaAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = CC66D852181A2ABF0039A0A5 /* NSDictionary+MochaAdditions.h */; };
+		D156E97F19272B55008704CC /* NSObject+MochaAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = CC66D854181A2ABF0039A0A5 /* NSObject+MochaAdditions.h */; };
+		D156E98019272B55008704CC /* NSOrderedSet+MochaAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = CC66D856181A2ABF0039A0A5 /* NSOrderedSet+MochaAdditions.h */; };
+		D156E98119272B55008704CC /* Mocha.h in Headers */ = {isa = PBXBuildFile; fileRef = CC66D860181A2AE10039A0A5 /* Mocha.h */; };
+		D156E98219272B55008704CC /* MochaDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = CC66D862181A2AE10039A0A5 /* MochaDefines.h */; };
+		D156E98319272B55008704CC /* MochaRuntime_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = CC66D863181A2AE10039A0A5 /* MochaRuntime_Private.h */; };
+		D156E98419272B55008704CC /* MochaRuntime.h in Headers */ = {isa = PBXBuildFile; fileRef = CC66D864181A2AE10039A0A5 /* MochaRuntime.h */; };
+		D156E98519272B55008704CC /* MOAllocator.h in Headers */ = {isa = PBXBuildFile; fileRef = CC66D878181A2B0A0039A0A5 /* MOAllocator.h */; };
+		D156E98619272B55008704CC /* MOBox.h in Headers */ = {isa = PBXBuildFile; fileRef = CC66D87A181A2B0A0039A0A5 /* MOBox.h */; };
+		D156E98719272B55008704CC /* MOClassDescription.h in Headers */ = {isa = PBXBuildFile; fileRef = CC66D87C181A2B0A0039A0A5 /* MOClassDescription.h */; };
+		D156E98819272B55008704CC /* MOClosure_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = CC66D87E181A2B0A0039A0A5 /* MOClosure_Private.h */; };
+		D156E98919272B55008704CC /* MOClosure.h in Headers */ = {isa = PBXBuildFile; fileRef = CC66D87F181A2B0A0039A0A5 /* MOClosure.h */; };
+		D156E98A19272B55008704CC /* MOInstanceVariableDescription_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = CC66D881181A2B0A0039A0A5 /* MOInstanceVariableDescription_Private.h */; };
+		D156E98B19272B55008704CC /* MOInstanceVariableDescription.h in Headers */ = {isa = PBXBuildFile; fileRef = CC66D882181A2B0A0039A0A5 /* MOInstanceVariableDescription.h */; };
+		D156E98C19272B55008704CC /* MOJavaScriptObject.h in Headers */ = {isa = PBXBuildFile; fileRef = CC66D884181A2B0A0039A0A5 /* MOJavaScriptObject.h */; };
+		D156E98D19272B55008704CC /* MOMethod_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = CC66D886181A2B0A0039A0A5 /* MOMethod_Private.h */; };
+		D156E98E19272B55008704CC /* MOMethod.h in Headers */ = {isa = PBXBuildFile; fileRef = CC66D887181A2B0A0039A0A5 /* MOMethod.h */; };
+		D156E98F19272B55008704CC /* MOMethodDescription_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = CC66D889181A2B0A0039A0A5 /* MOMethodDescription_Private.h */; };
+		D156E99019272B55008704CC /* MOMethodDescription.h in Headers */ = {isa = PBXBuildFile; fileRef = CC66D88A181A2B0A0039A0A5 /* MOMethodDescription.h */; };
+		D156E99119272B55008704CC /* MOObjCRuntime.h in Headers */ = {isa = PBXBuildFile; fileRef = CC66D88C181A2B0A0039A0A5 /* MOObjCRuntime.h */; };
+		D156E99219272B55008704CC /* MOPointer_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = CC66D88E181A2B0A0039A0A5 /* MOPointer_Private.h */; };
+		D156E99319272B55008704CC /* MOPointer.h in Headers */ = {isa = PBXBuildFile; fileRef = CC66D88F181A2B0A0039A0A5 /* MOPointer.h */; };
+		D156E99419272B55008704CC /* MOPointerValue.h in Headers */ = {isa = PBXBuildFile; fileRef = CC66D891181A2B0A0039A0A5 /* MOPointerValue.h */; };
+		D156E99519272B55008704CC /* MOPropertyDescription.h in Headers */ = {isa = PBXBuildFile; fileRef = CC66D893181A2B0A0039A0A5 /* MOPropertyDescription.h */; };
+		D156E99619272B55008704CC /* MOStruct.h in Headers */ = {isa = PBXBuildFile; fileRef = CC66D898181A2B0A0039A0A5 /* MOStruct.h */; };
+		D156E99719272B55008704CC /* MOUndefined.h in Headers */ = {isa = PBXBuildFile; fileRef = CC66D89A181A2B0A0039A0A5 /* MOUndefined.h */; };
+		D156E99819272B55008704CC /* MOFunctionArgument.h in Headers */ = {isa = PBXBuildFile; fileRef = CC66D86C181A2AF30039A0A5 /* MOFunctionArgument.h */; };
+		D156E99919272B55008704CC /* MOMapTable.h in Headers */ = {isa = PBXBuildFile; fileRef = CC66D86E181A2AF30039A0A5 /* MOMapTable.h */; };
+		D156E99A19272B55008704CC /* MOUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = CC66D870181A2AF30039A0A5 /* MOUtilities.h */; };
+		D156E99B19272C01008704CC /* TDAlternation.h in Headers */ = {isa = PBXBuildFile; fileRef = CC66D75C181A2A460039A0A5 /* TDAlternation.h */; };
+		D156E99C19272C01008704CC /* TDAny.h in Headers */ = {isa = PBXBuildFile; fileRef = CC66D75E181A2A460039A0A5 /* TDAny.h */; };
+		D156E99D19272C01008704CC /* TDAssembly.h in Headers */ = {isa = PBXBuildFile; fileRef = CC66D760181A2A460039A0A5 /* TDAssembly.h */; };
+		D156E99E19272C01008704CC /* TDCaseInsensitiveLiteral.h in Headers */ = {isa = PBXBuildFile; fileRef = CC66D762181A2A460039A0A5 /* TDCaseInsensitiveLiteral.h */; };
+		D156E99F19272C01008704CC /* TDChar.h in Headers */ = {isa = PBXBuildFile; fileRef = CC66D764181A2A460039A0A5 /* TDChar.h */; };
+		D156E9A019272C01008704CC /* TDCharacterAssembly.h in Headers */ = {isa = PBXBuildFile; fileRef = CC66D766181A2A460039A0A5 /* TDCharacterAssembly.h */; };
+		D156E9A119272C01008704CC /* TDDigit.h in Headers */ = {isa = PBXBuildFile; fileRef = CC66D76E181A2A460039A0A5 /* TDDigit.h */; };
+		D156E9A219272C01008704CC /* TDEmpty.h in Headers */ = {isa = PBXBuildFile; fileRef = CC66D770181A2A460039A0A5 /* TDEmpty.h */; };
+		D156E9A319272C01008704CC /* TDLetter.h in Headers */ = {isa = PBXBuildFile; fileRef = CC66D772181A2A460039A0A5 /* TDLetter.h */; };
+		D156E9A419272C01008704CC /* TDLiteral.h in Headers */ = {isa = PBXBuildFile; fileRef = CC66D774181A2A460039A0A5 /* TDLiteral.h */; };
+		D156E9A519272C01008704CC /* TDLowercaseWord.h in Headers */ = {isa = PBXBuildFile; fileRef = CC66D776181A2A460039A0A5 /* TDLowercaseWord.h */; };
+		D156E9A619272C01008704CC /* TDNonReservedWord.h in Headers */ = {isa = PBXBuildFile; fileRef = CC66D77A181A2A460039A0A5 /* TDNonReservedWord.h */; };
+		D156E9A719272C01008704CC /* TDNum.h in Headers */ = {isa = PBXBuildFile; fileRef = CC66D77C181A2A460039A0A5 /* TDNum.h */; };
+		D156E9A819272C01008704CC /* TDNumberState.h in Headers */ = {isa = PBXBuildFile; fileRef = CC66D77E181A2A460039A0A5 /* TDNumberState.h */; };
+		D156E9A919272C01008704CC /* TDParseKit.h in Headers */ = {isa = PBXBuildFile; fileRef = CC66D780181A2A460039A0A5 /* TDParseKit.h */; };
+		D156E9AA19272C01008704CC /* TDParser.h in Headers */ = {isa = PBXBuildFile; fileRef = CC66D781181A2A460039A0A5 /* TDParser.h */; };
+		D156E9AB19272C01008704CC /* TDQuotedString.h in Headers */ = {isa = PBXBuildFile; fileRef = CC66D783181A2A460039A0A5 /* TDQuotedString.h */; };
+		D156E9AC19272C01008704CC /* TDQuoteState.h in Headers */ = {isa = PBXBuildFile; fileRef = CC66D785181A2A460039A0A5 /* TDQuoteState.h */; };
+		D156E9AD19272C01008704CC /* TDReader.h in Headers */ = {isa = PBXBuildFile; fileRef = CC66D787181A2A460039A0A5 /* TDReader.h */; };
+		D156E9AE19272C01008704CC /* TDRepetition.h in Headers */ = {isa = PBXBuildFile; fileRef = CC66D789181A2A460039A0A5 /* TDRepetition.h */; };
+		D156E9AF19272C01008704CC /* TDReservedWord.h in Headers */ = {isa = PBXBuildFile; fileRef = CC66D78B181A2A460039A0A5 /* TDReservedWord.h */; };
+		D156E9B019272C01008704CC /* TDScientificNumberState.h in Headers */ = {isa = PBXBuildFile; fileRef = CC66D78D181A2A460039A0A5 /* TDScientificNumberState.h */; };
+		D156E9B119272C01008704CC /* TDSequence.h in Headers */ = {isa = PBXBuildFile; fileRef = CC66D78F181A2A460039A0A5 /* TDSequence.h */; };
+		D156E9B219272C01008704CC /* TDSpecificChar.h in Headers */ = {isa = PBXBuildFile; fileRef = CC66D795181A2A460039A0A5 /* TDSpecificChar.h */; };
+		D156E9B319272C01008704CC /* TDSymbol.h in Headers */ = {isa = PBXBuildFile; fileRef = CC66D797181A2A460039A0A5 /* TDSymbol.h */; };
+		D156E9B419272C01008704CC /* TDSymbolNode.h in Headers */ = {isa = PBXBuildFile; fileRef = CC66D799181A2A460039A0A5 /* TDSymbolNode.h */; };
+		D156E9B519272C01008704CC /* TDSymbolRootNode.h in Headers */ = {isa = PBXBuildFile; fileRef = CC66D79B181A2A460039A0A5 /* TDSymbolRootNode.h */; };
+		D156E9B619272C01008704CC /* TDSymbolState.h in Headers */ = {isa = PBXBuildFile; fileRef = CC66D79D181A2A460039A0A5 /* TDSymbolState.h */; };
+		D156E9B719272C01008704CC /* TDTerminal.h in Headers */ = {isa = PBXBuildFile; fileRef = CC66D79F181A2A460039A0A5 /* TDTerminal.h */; };
+		D156E9B819272C01008704CC /* TDToken.h in Headers */ = {isa = PBXBuildFile; fileRef = CC66D7A1181A2A460039A0A5 /* TDToken.h */; };
+		D156E9B919272C01008704CC /* TDTokenArraySource.h in Headers */ = {isa = PBXBuildFile; fileRef = CC66D7A3181A2A460039A0A5 /* TDTokenArraySource.h */; };
+		D156E9BA19272C01008704CC /* TDTokenAssembly.h in Headers */ = {isa = PBXBuildFile; fileRef = CC66D7A5181A2A460039A0A5 /* TDTokenAssembly.h */; };
+		D156E9BB19272C01008704CC /* TDTokenizer.h in Headers */ = {isa = PBXBuildFile; fileRef = CC66D7A7181A2A460039A0A5 /* TDTokenizer.h */; };
+		D156E9BC19272C01008704CC /* TDTokenizerState.h in Headers */ = {isa = PBXBuildFile; fileRef = CC66D7A9181A2A460039A0A5 /* TDTokenizerState.h */; };
+		D156E9BD19272C01008704CC /* TDTrack.h in Headers */ = {isa = PBXBuildFile; fileRef = CC66D7AB181A2A460039A0A5 /* TDTrack.h */; };
+		D156E9BE19272C01008704CC /* TDTrackException.h in Headers */ = {isa = PBXBuildFile; fileRef = CC66D7AD181A2A460039A0A5 /* TDTrackException.h */; };
+		D156E9BF19272C01008704CC /* TDUppercaseWord.h in Headers */ = {isa = PBXBuildFile; fileRef = CC66D7AF181A2A460039A0A5 /* TDUppercaseWord.h */; };
+		D156E9C019272C01008704CC /* TDWhitespaceState.h in Headers */ = {isa = PBXBuildFile; fileRef = CC66D7B1181A2A460039A0A5 /* TDWhitespaceState.h */; };
+		D156E9C119272C02008704CC /* TDWord.h in Headers */ = {isa = PBXBuildFile; fileRef = CC66D7B3181A2A460039A0A5 /* TDWord.h */; };
+		D156E9C219272C02008704CC /* TDWordOrReservedState.h in Headers */ = {isa = PBXBuildFile; fileRef = CC66D7B5181A2A460039A0A5 /* TDWordOrReservedState.h */; };
+		D156E9C319272C02008704CC /* TDWordState.h in Headers */ = {isa = PBXBuildFile; fileRef = CC66D7B7181A2A460039A0A5 /* TDWordState.h */; };
+		D156E9C519272C39008704CC /* COSInterval.m in Sources */ = {isa = PBXBuildFile; fileRef = CCA1A534183EA86E000159B3 /* COSInterval.m */; };
+		D156E9C619272C39008704CC /* COScript+Interval.m in Sources */ = {isa = PBXBuildFile; fileRef = CC847AFB183EE02300436C38 /* COScript+Interval.m */; };
+		D156E9C919272C39008704CC /* COSImageTools.m in Sources */ = {isa = PBXBuildFile; fileRef = CC66D82D181A2A9B0039A0A5 /* COSImageTools.m */; };
+		D156E9CD19272C39008704CC /* MOBridgeSupportController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC66D841181A2AB10039A0A5 /* MOBridgeSupportController.m */; };
+		D156E9CE19272C39008704CC /* MOBridgeSupportLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = CC66D843181A2AB10039A0A5 /* MOBridgeSupportLibrary.m */; };
+		D156E9CF19272C39008704CC /* MOBridgeSupportParser.m in Sources */ = {isa = PBXBuildFile; fileRef = CC66D845181A2AB10039A0A5 /* MOBridgeSupportParser.m */; };
+		D156E9D019272C39008704CC /* MOBridgeSupportSymbol.m in Sources */ = {isa = PBXBuildFile; fileRef = CC66D847181A2AB10039A0A5 /* MOBridgeSupportSymbol.m */; };
+		D156E9D119272C39008704CC /* NSArray+MochaAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = CC66D851181A2ABF0039A0A5 /* NSArray+MochaAdditions.m */; };
+		D156E9D219272C39008704CC /* NSDictionary+MochaAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = CC66D853181A2ABF0039A0A5 /* NSDictionary+MochaAdditions.m */; };
+		D156E9D319272C39008704CC /* NSObject+MochaAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = CC66D855181A2ABF0039A0A5 /* NSObject+MochaAdditions.m */; };
+		D156E9D419272C39008704CC /* NSOrderedSet+MochaAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = CC66D857181A2ABF0039A0A5 /* NSOrderedSet+MochaAdditions.m */; };
+		D156E9D519272C39008704CC /* Mocha.m in Sources */ = {isa = PBXBuildFile; fileRef = CC66D861181A2AE10039A0A5 /* Mocha.m */; };
+		D156E9D619272C39008704CC /* MochaRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = CC66D865181A2AE10039A0A5 /* MochaRuntime.m */; };
+		D156E9D719272C39008704CC /* MOAllocator.m in Sources */ = {isa = PBXBuildFile; fileRef = CC66D879181A2B0A0039A0A5 /* MOAllocator.m */; };
+		D156E9D819272C39008704CC /* MOBox.m in Sources */ = {isa = PBXBuildFile; fileRef = CC66D87B181A2B0A0039A0A5 /* MOBox.m */; };
+		D156E9D919272C39008704CC /* MOClassDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = CC66D87D181A2B0A0039A0A5 /* MOClassDescription.m */; };
+		D156E9DA19272C39008704CC /* MOClosure.m in Sources */ = {isa = PBXBuildFile; fileRef = CC66D880181A2B0A0039A0A5 /* MOClosure.m */; };
+		D156E9DB19272C9E008704CC /* MOInstanceVariableDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = CC66D883181A2B0A0039A0A5 /* MOInstanceVariableDescription.m */; };
+		D156E9DC19272C9E008704CC /* MOJavaScriptObject.m in Sources */ = {isa = PBXBuildFile; fileRef = CC66D885181A2B0A0039A0A5 /* MOJavaScriptObject.m */; };
+		D156E9DD19272C9E008704CC /* MOMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = CC66D888181A2B0A0039A0A5 /* MOMethod.m */; };
+		D156E9DE19272C9E008704CC /* MOMethodDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = CC66D88B181A2B0A0039A0A5 /* MOMethodDescription.m */; };
+		D156E9DF19272C9E008704CC /* MOObjCRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = CC66D88D181A2B0A0039A0A5 /* MOObjCRuntime.m */; };
+		D156E9E019272C9E008704CC /* MOPointer.m in Sources */ = {isa = PBXBuildFile; fileRef = CC66D890181A2B0A0039A0A5 /* MOPointer.m */; };
+		D156E9E119272C9E008704CC /* MOPointerValue.m in Sources */ = {isa = PBXBuildFile; fileRef = CC66D892181A2B0A0039A0A5 /* MOPointerValue.m */; };
+		D156E9E219272C9E008704CC /* MOPropertyDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = CC66D894181A2B0A0039A0A5 /* MOPropertyDescription.m */; };
+		D156E9E319272C9E008704CC /* MOProtocolDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = CC66D897181A2B0A0039A0A5 /* MOProtocolDescription.m */; };
+		D156E9E419272C9E008704CC /* MOStruct.m in Sources */ = {isa = PBXBuildFile; fileRef = CC66D899181A2B0A0039A0A5 /* MOStruct.m */; };
+		D156E9E519272C9E008704CC /* MOUndefined.m in Sources */ = {isa = PBXBuildFile; fileRef = CC66D89B181A2B0A0039A0A5 /* MOUndefined.m */; };
+		D156E9E619272C9E008704CC /* MOFunctionArgument.m in Sources */ = {isa = PBXBuildFile; fileRef = CC66D86D181A2AF30039A0A5 /* MOFunctionArgument.m */; };
+		D156E9E719272C9E008704CC /* MOMapTable.m in Sources */ = {isa = PBXBuildFile; fileRef = CC66D86F181A2AF30039A0A5 /* MOMapTable.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D156E9E819272C9E008704CC /* MOUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = CC66D871181A2AF30039A0A5 /* MOUtilities.m */; };
+		D156E9E919272C9E008704CC /* MarkerLineNumberView.m in Sources */ = {isa = PBXBuildFile; fileRef = CC66D74D181A2A210039A0A5 /* MarkerLineNumberView.m */; };
+		D156E9EC19272C9E008704CC /* TETextUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = CC66D753181A2A210039A0A5 /* TETextUtils.m */; };
+		D156E9EE19272C9E008704CC /* COSTarget.m in Sources */ = {isa = PBXBuildFile; fileRef = 384830E11832D48500B34168 /* COSTarget.m */; };
+		D156E9EF19272C9E008704CC /* TDAlternation.m in Sources */ = {isa = PBXBuildFile; fileRef = CC66D75D181A2A460039A0A5 /* TDAlternation.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D156E9F019272C9E008704CC /* TDAny.m in Sources */ = {isa = PBXBuildFile; fileRef = CC66D75F181A2A460039A0A5 /* TDAny.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D156E9F119272C9E008704CC /* TDAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = CC66D761181A2A460039A0A5 /* TDAssembly.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D156E9F219272C9E008704CC /* TDCaseInsensitiveLiteral.m in Sources */ = {isa = PBXBuildFile; fileRef = CC66D763181A2A460039A0A5 /* TDCaseInsensitiveLiteral.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D156E9F319272C9E008704CC /* TDChar.m in Sources */ = {isa = PBXBuildFile; fileRef = CC66D765181A2A460039A0A5 /* TDChar.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D156E9F419272C9E008704CC /* TDCharacterAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = CC66D767181A2A460039A0A5 /* TDCharacterAssembly.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D156E9F519272C9E008704CC /* TDCollectionParser.m in Sources */ = {isa = PBXBuildFile; fileRef = CC66D769181A2A460039A0A5 /* TDCollectionParser.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D156E9F619272C9E008704CC /* TDComment.m in Sources */ = {isa = PBXBuildFile; fileRef = CC66D76B181A2A460039A0A5 /* TDComment.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D156E9F719272C9E008704CC /* TDCommentState.m in Sources */ = {isa = PBXBuildFile; fileRef = CC66D76D181A2A460039A0A5 /* TDCommentState.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D156E9F819272C9E008704CC /* TDDigit.m in Sources */ = {isa = PBXBuildFile; fileRef = CC66D76F181A2A460039A0A5 /* TDDigit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D156E9F919272C9E008704CC /* TDEmpty.m in Sources */ = {isa = PBXBuildFile; fileRef = CC66D771181A2A460039A0A5 /* TDEmpty.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D156E9FA19272C9E008704CC /* TDLetter.m in Sources */ = {isa = PBXBuildFile; fileRef = CC66D773181A2A460039A0A5 /* TDLetter.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D156E9FB19272C9E008704CC /* TDLiteral.m in Sources */ = {isa = PBXBuildFile; fileRef = CC66D775181A2A460039A0A5 /* TDLiteral.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D156E9FC19272C9E008704CC /* TDLowercaseWord.m in Sources */ = {isa = PBXBuildFile; fileRef = CC66D777181A2A460039A0A5 /* TDLowercaseWord.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D156E9FD19272C9E008704CC /* TDMultiLineCommentState.m in Sources */ = {isa = PBXBuildFile; fileRef = CC66D779181A2A460039A0A5 /* TDMultiLineCommentState.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D156E9FE19272C9E008704CC /* TDNonReservedWord.m in Sources */ = {isa = PBXBuildFile; fileRef = CC66D77B181A2A460039A0A5 /* TDNonReservedWord.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D156E9FF19272C9E008704CC /* TDNum.m in Sources */ = {isa = PBXBuildFile; fileRef = CC66D77D181A2A460039A0A5 /* TDNum.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D156EA0019272C9E008704CC /* TDNumberState.m in Sources */ = {isa = PBXBuildFile; fileRef = CC66D77F181A2A460039A0A5 /* TDNumberState.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D156EA0119272C9E008704CC /* TDParser.m in Sources */ = {isa = PBXBuildFile; fileRef = CC66D782181A2A460039A0A5 /* TDParser.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D156EA0219272C9E008704CC /* TDQuotedString.m in Sources */ = {isa = PBXBuildFile; fileRef = CC66D784181A2A460039A0A5 /* TDQuotedString.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D156EA0319272C9E008704CC /* TDQuoteState.m in Sources */ = {isa = PBXBuildFile; fileRef = CC66D786181A2A460039A0A5 /* TDQuoteState.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D156EA0419272C9E008704CC /* TDReader.m in Sources */ = {isa = PBXBuildFile; fileRef = CC66D788181A2A460039A0A5 /* TDReader.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D156EA0519272C9E008704CC /* TDRepetition.m in Sources */ = {isa = PBXBuildFile; fileRef = CC66D78A181A2A460039A0A5 /* TDRepetition.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D156EA0619272C9E008704CC /* TDReservedWord.m in Sources */ = {isa = PBXBuildFile; fileRef = CC66D78C181A2A460039A0A5 /* TDReservedWord.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D156EA0719272C9E008704CC /* TDScientificNumberState.m in Sources */ = {isa = PBXBuildFile; fileRef = CC66D78E181A2A460039A0A5 /* TDScientificNumberState.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D156EA0819272C9E008704CC /* TDSequence.m in Sources */ = {isa = PBXBuildFile; fileRef = CC66D790181A2A460039A0A5 /* TDSequence.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D156EA0919272C9E008704CC /* TDSingleLineCommentState.m in Sources */ = {isa = PBXBuildFile; fileRef = CC66D794181A2A460039A0A5 /* TDSingleLineCommentState.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D156EA0A19272C9E008704CC /* TDSpecificChar.m in Sources */ = {isa = PBXBuildFile; fileRef = CC66D796181A2A460039A0A5 /* TDSpecificChar.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D156EA0B19272C9E008704CC /* TDSymbol.m in Sources */ = {isa = PBXBuildFile; fileRef = CC66D798181A2A460039A0A5 /* TDSymbol.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D156EA0C19272C9E008704CC /* TDSymbolNode.m in Sources */ = {isa = PBXBuildFile; fileRef = CC66D79A181A2A460039A0A5 /* TDSymbolNode.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D156EA0D19272C9E008704CC /* TDSymbolRootNode.m in Sources */ = {isa = PBXBuildFile; fileRef = CC66D79C181A2A460039A0A5 /* TDSymbolRootNode.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D156EA0E19272C9E008704CC /* TDSymbolState.m in Sources */ = {isa = PBXBuildFile; fileRef = CC66D79E181A2A460039A0A5 /* TDSymbolState.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D156EA0F19272C9E008704CC /* TDTerminal.m in Sources */ = {isa = PBXBuildFile; fileRef = CC66D7A0181A2A460039A0A5 /* TDTerminal.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D156EA1019272C9E008704CC /* TDToken.m in Sources */ = {isa = PBXBuildFile; fileRef = CC66D7A2181A2A460039A0A5 /* TDToken.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D156EA1119272C9E008704CC /* TDTokenArraySource.m in Sources */ = {isa = PBXBuildFile; fileRef = CC66D7A4181A2A460039A0A5 /* TDTokenArraySource.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D156EA1219272C9E008704CC /* TDTokenAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = CC66D7A6181A2A460039A0A5 /* TDTokenAssembly.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D156EA1319272C9E008704CC /* TDTokenizer.m in Sources */ = {isa = PBXBuildFile; fileRef = CC66D7A8181A2A460039A0A5 /* TDTokenizer.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D156EA1419272C9E008704CC /* TDTokenizerState.m in Sources */ = {isa = PBXBuildFile; fileRef = CC66D7AA181A2A460039A0A5 /* TDTokenizerState.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D156EA1519272C9E008704CC /* TDTrack.m in Sources */ = {isa = PBXBuildFile; fileRef = CC66D7AC181A2A460039A0A5 /* TDTrack.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D156EA1619272C9E008704CC /* TDTrackException.m in Sources */ = {isa = PBXBuildFile; fileRef = CC66D7AE181A2A460039A0A5 /* TDTrackException.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D156EA1719272C9E008704CC /* TDUppercaseWord.m in Sources */ = {isa = PBXBuildFile; fileRef = CC66D7B0181A2A460039A0A5 /* TDUppercaseWord.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D156EA1819272C9E008704CC /* TDWhitespaceState.m in Sources */ = {isa = PBXBuildFile; fileRef = CC66D7B2181A2A460039A0A5 /* TDWhitespaceState.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D156EA1919272C9E008704CC /* TDWord.m in Sources */ = {isa = PBXBuildFile; fileRef = CC66D7B4181A2A460039A0A5 /* TDWord.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D156EA1A19272C9E008704CC /* TDWordOrReservedState.m in Sources */ = {isa = PBXBuildFile; fileRef = CC66D7B6181A2A460039A0A5 /* TDWordOrReservedState.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D156EA1B19272C9E008704CC /* TDWordState.m in Sources */ = {isa = PBXBuildFile; fileRef = CC66D7B8181A2A460039A0A5 /* TDWordState.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D156EA1C19272C9E008704CC /* COScript.m in Sources */ = {isa = PBXBuildFile; fileRef = CC66D817181A2A710039A0A5 /* COScript.m */; };
+		D156EA1F19272C9E008704CC /* COSPreprocessor.m in Sources */ = {isa = PBXBuildFile; fileRef = CC66D81D181A2A710039A0A5 /* COSPreprocessor.m */; };
+		D156EA2019272C9E008704CC /* cocoascript_tool.m in Sources */ = {isa = PBXBuildFile; fileRef = CC66D8D7181A2FC10039A0A5 /* cocoascript_tool.m */; };
+		D156EA2219272ECC008704CC /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D156EA2119272ECC008704CC /* QuartzCore.framework */; };
+		D156EA2419272ED0008704CC /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D156EA2319272ED0008704CC /* JavaScriptCore.framework */; };
+		D156EA4219272FD2008704CC /* ffi_arm64.h in Headers */ = {isa = PBXBuildFile; fileRef = D156EA3619272FD2008704CC /* ffi_arm64.h */; };
+		D156EA4319272FD2008704CC /* ffi_armv7.h in Headers */ = {isa = PBXBuildFile; fileRef = D156EA3719272FD2008704CC /* ffi_armv7.h */; };
+		D156EA4419272FD2008704CC /* ffi_i386.h in Headers */ = {isa = PBXBuildFile; fileRef = D156EA3819272FD2008704CC /* ffi_i386.h */; };
+		D156EA4519272FD2008704CC /* ffi_x86_64.h in Headers */ = {isa = PBXBuildFile; fileRef = D156EA3919272FD2008704CC /* ffi_x86_64.h */; };
+		D156EA4619272FD2008704CC /* fficonfig_arm64.h in Headers */ = {isa = PBXBuildFile; fileRef = D156EA3A19272FD2008704CC /* fficonfig_arm64.h */; };
+		D156EA4719272FD2008704CC /* fficonfig_armv7.h in Headers */ = {isa = PBXBuildFile; fileRef = D156EA3B19272FD2008704CC /* fficonfig_armv7.h */; };
+		D156EA4819272FD2008704CC /* fficonfig_i386.h in Headers */ = {isa = PBXBuildFile; fileRef = D156EA3C19272FD2008704CC /* fficonfig_i386.h */; };
+		D156EA4919272FD2008704CC /* fficonfig_x86_64.h in Headers */ = {isa = PBXBuildFile; fileRef = D156EA3D19272FD2008704CC /* fficonfig_x86_64.h */; };
+		D156EA4A19272FD2008704CC /* ffitarget_arm64.h in Headers */ = {isa = PBXBuildFile; fileRef = D156EA3E19272FD2008704CC /* ffitarget_arm64.h */; };
+		D156EA4B19272FD2008704CC /* ffitarget_armv7.h in Headers */ = {isa = PBXBuildFile; fileRef = D156EA3F19272FD2008704CC /* ffitarget_armv7.h */; };
+		D156EA4C19272FD2008704CC /* ffitarget_i386.h in Headers */ = {isa = PBXBuildFile; fileRef = D156EA4019272FD2008704CC /* ffitarget_i386.h */; };
+		D156EA4D19272FD2008704CC /* ffitarget_x86_64.h in Headers */ = {isa = PBXBuildFile; fileRef = D156EA4119272FD2008704CC /* ffitarget_x86_64.h */; };
+		D156EA6019273152008704CC /* ffi.h in Headers */ = {isa = PBXBuildFile; fileRef = D156EA5F19273152008704CC /* ffi.h */; };
+		D156EA61192731C4008704CC /* TETextUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = CC66D752181A2A210039A0A5 /* TETextUtils.h */; };
+		D156EA62192731C4008704CC /* TETextUtils.m in Headers */ = {isa = PBXBuildFile; fileRef = CC66D753181A2A210039A0A5 /* TETextUtils.m */; };
+		D156EA6619273212008704CC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D156EA6519273212008704CC /* CoreGraphics.framework */; };
+		D156EA67192732E3008704CC /* CocoaScript_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = CC66D826181A2A810039A0A5 /* CocoaScript_Prefix.pch */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -330,6 +528,34 @@
 			proxyType = 1;
 			remoteGlobalIDString = CC4143190F25254200E46669;
 			remoteInfo = "JSTalk Framework";
+		};
+		D156E93019272523008704CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D156E91B19272523008704CC;
+			remoteInfo = CocoaScript;
+		};
+		D156E94619272578008704CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D156E94119272578008704CC /* libffi.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DB13B1661849DF1E0010F42D;
+			remoteInfo = "libffi-iOS";
+		};
+		D156E94819272578008704CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D156E94119272578008704CC /* libffi.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DB13B1911849DF510010F42D;
+			remoteInfo = "libffi-Mac";
+		};
+		D156EA63192731F2008704CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D156E94119272578008704CC /* libffi.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = DB13B1651849DF1E0010F42D;
+			remoteInfo = "libffi-iOS";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -591,6 +817,31 @@
 		CCF056171849A23C000C56F7 /* COSScript+Spelunking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "COSScript+Spelunking.m"; path = "src/framework/COSScript+Spelunking.m"; sourceTree = "<group>"; };
 		CCF0561C184A884D000C56F7 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = ../../../../System/Library/Frameworks/OpenGL.framework; sourceTree = "<group>"; };
 		CCF68F1D0F4E3E4F00925FCA /* JSTalkDocument.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = JSTalkDocument.icns; path = res/images/JSTalkDocument.icns; sourceTree = "<group>"; };
+		D156E91C19272523008704CC /* libCocoaScript.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCocoaScript.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D156E91D19272523008704CC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D156E92A19272523008704CC /* CocoaScriptTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CocoaScriptTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D156E92B19272523008704CC /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		D156E92E19272523008704CC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		D156E93519272523008704CC /* CocoaScriptTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CocoaScriptTests-Info.plist"; sourceTree = "<group>"; };
+		D156E93719272523008704CC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D156E93919272523008704CC /* CocoaScriptTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CocoaScriptTests.m; sourceTree = "<group>"; };
+		D156E94119272578008704CC /* libffi.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = libffi.xcodeproj; path = External/libffi/libffi.xcodeproj; sourceTree = "<group>"; };
+		D156EA2119272ECC008704CC /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		D156EA2319272ED0008704CC /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
+		D156EA3619272FD2008704CC /* ffi_arm64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ffi_arm64.h; sourceTree = "<group>"; };
+		D156EA3719272FD2008704CC /* ffi_armv7.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ffi_armv7.h; sourceTree = "<group>"; };
+		D156EA3819272FD2008704CC /* ffi_i386.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ffi_i386.h; sourceTree = "<group>"; };
+		D156EA3919272FD2008704CC /* ffi_x86_64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ffi_x86_64.h; sourceTree = "<group>"; };
+		D156EA3A19272FD2008704CC /* fficonfig_arm64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fficonfig_arm64.h; sourceTree = "<group>"; };
+		D156EA3B19272FD2008704CC /* fficonfig_armv7.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fficonfig_armv7.h; sourceTree = "<group>"; };
+		D156EA3C19272FD2008704CC /* fficonfig_i386.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fficonfig_i386.h; sourceTree = "<group>"; };
+		D156EA3D19272FD2008704CC /* fficonfig_x86_64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fficonfig_x86_64.h; sourceTree = "<group>"; };
+		D156EA3E19272FD2008704CC /* ffitarget_arm64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ffitarget_arm64.h; sourceTree = "<group>"; };
+		D156EA3F19272FD2008704CC /* ffitarget_armv7.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ffitarget_armv7.h; sourceTree = "<group>"; };
+		D156EA4019272FD2008704CC /* ffitarget_i386.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ffitarget_i386.h; sourceTree = "<group>"; };
+		D156EA4119272FD2008704CC /* ffitarget_x86_64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ffitarget_x86_64.h; sourceTree = "<group>"; };
+		D156EA5F19273152008704CC /* ffi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ffi.h; path = "External/libffi/x86_64-apple-darwin13.2.0/include/ffi.h"; sourceTree = "<group>"; };
+		D156EA6519273212008704CC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -631,6 +882,29 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D156E91919272523008704CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D156EA6619273212008704CC /* CoreGraphics.framework in Frameworks */,
+				D156EA2419272ED0008704CC /* JavaScriptCore.framework in Frameworks */,
+				D156EA2219272ECC008704CC /* QuartzCore.framework in Frameworks */,
+				D156E94A19272581008704CC /* libffi.a in Frameworks */,
+				D156E91E19272523008704CC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D156E92719272523008704CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D156E93219272523008704CC /* libCocoaScript.a in Frameworks */,
+				D156E92C19272523008704CC /* XCTest.framework in Frameworks */,
+				D156E92F19272523008704CC /* UIKit.framework in Frameworks */,
+				D156E92D19272523008704CC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -658,6 +932,8 @@
 				8D15AC370486D014006FF6A4 /* Cocoa Script Editor.app */,
 				CC5FB7C20F1FDCCC00F4ECC2 /* coscript */,
 				CC41431A0F25254200E46669 /* CocoaScript.framework */,
+				D156E91C19272523008704CC /* libCocoaScript.a */,
+				D156E92A19272523008704CC /* CocoaScriptTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -669,6 +945,7 @@
 				CC0EC3380F2274730094F69D /* Framework */,
 				2A37F4AFFDCFA73011CA2CEA /* Other Sources */,
 				2A37F4B8FDCFA73011CA2CEA /* Resources */,
+				D156E93319272523008704CC /* CocoaScriptTests */,
 				2A37F4C3FDCFA73011CA2CEA /* Frameworks */,
 				19C28FB0FE9D524F11CA2CBB /* Products */,
 			);
@@ -705,6 +982,12 @@
 		2A37F4C3FDCFA73011CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D156EA6519273212008704CC /* CoreGraphics.framework */,
+				D156EA5F19273152008704CC /* ffi.h */,
+				D156EA3519272FD2008704CC /* libffi headers */,
+				D156EA2319272ED0008704CC /* JavaScriptCore.framework */,
+				D156EA2119272ECC008704CC /* QuartzCore.framework */,
+				D156E94119272578008704CC /* libffi.xcodeproj */,
 				CCF0561C184A884D000C56F7 /* OpenGL.framework */,
 				CC86430E163B29F500908427 /* OpenCL.framework */,
 				CC86430C163B29E600908427 /* QuartzCore.framework */,
@@ -712,6 +995,9 @@
 				CC0EC3280F226F550094F69D /* ScriptingBridge.framework */,
 				CCC5B8A40F1EFA6D00126722 /* JavaScriptCore.framework */,
 				1058C7A6FEA54F5311CA2CBB /* Linked Frameworks */,
+				D156E91D19272523008704CC /* Foundation.framework */,
+				D156E92B19272523008704CC /* XCTest.framework */,
+				D156E92E19272523008704CC /* UIKit.framework */,
 				1058C7A8FEA54F5311CA2CBB /* Other Frameworks */,
 			);
 			name = Frameworks;
@@ -1050,6 +1336,53 @@
 			name = Spelunking;
 			sourceTree = "<group>";
 		};
+		D156E93319272523008704CC /* CocoaScriptTests */ = {
+			isa = PBXGroup;
+			children = (
+				D156E93919272523008704CC /* CocoaScriptTests.m */,
+				D156E93419272523008704CC /* Supporting Files */,
+			);
+			path = CocoaScriptTests;
+			sourceTree = "<group>";
+		};
+		D156E93419272523008704CC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D156E93519272523008704CC /* CocoaScriptTests-Info.plist */,
+				D156E93619272523008704CC /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D156E94219272578008704CC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D156E94719272578008704CC /* libffi.a */,
+				D156E94919272578008704CC /* ffi.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D156EA3519272FD2008704CC /* libffi headers */ = {
+			isa = PBXGroup;
+			children = (
+				D156EA3619272FD2008704CC /* ffi_arm64.h */,
+				D156EA3719272FD2008704CC /* ffi_armv7.h */,
+				D156EA3819272FD2008704CC /* ffi_i386.h */,
+				D156EA3919272FD2008704CC /* ffi_x86_64.h */,
+				D156EA3A19272FD2008704CC /* fficonfig_arm64.h */,
+				D156EA3B19272FD2008704CC /* fficonfig_armv7.h */,
+				D156EA3C19272FD2008704CC /* fficonfig_i386.h */,
+				D156EA3D19272FD2008704CC /* fficonfig_x86_64.h */,
+				D156EA3E19272FD2008704CC /* ffitarget_arm64.h */,
+				D156EA3F19272FD2008704CC /* ffitarget_armv7.h */,
+				D156EA4019272FD2008704CC /* ffitarget_i386.h */,
+				D156EA4119272FD2008704CC /* ffitarget_x86_64.h */,
+			);
+			name = "libffi headers";
+			path = External/libffi/darwin_ios/include;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -1162,6 +1495,118 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D156E94C19272ABA008704CC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D156E94E19272AE8008704CC /* COScript.h in Headers */,
+				D156EA67192732E3008704CC /* CocoaScript_Prefix.pch in Headers */,
+				D156EA61192731C4008704CC /* TETextUtils.h in Headers */,
+				D156EA62192731C4008704CC /* TETextUtils.m in Headers */,
+				D156E99B19272C01008704CC /* TDAlternation.h in Headers */,
+				D156E99C19272C01008704CC /* TDAny.h in Headers */,
+				D156E99D19272C01008704CC /* TDAssembly.h in Headers */,
+				D156E99E19272C01008704CC /* TDCaseInsensitiveLiteral.h in Headers */,
+				D156E99F19272C01008704CC /* TDChar.h in Headers */,
+				D156E9A019272C01008704CC /* TDCharacterAssembly.h in Headers */,
+				D156E9A119272C01008704CC /* TDDigit.h in Headers */,
+				D156E9A219272C01008704CC /* TDEmpty.h in Headers */,
+				D156E9A319272C01008704CC /* TDLetter.h in Headers */,
+				D156E9A419272C01008704CC /* TDLiteral.h in Headers */,
+				D156E9A519272C01008704CC /* TDLowercaseWord.h in Headers */,
+				D156E9A619272C01008704CC /* TDNonReservedWord.h in Headers */,
+				D156E9A719272C01008704CC /* TDNum.h in Headers */,
+				D156E9A819272C01008704CC /* TDNumberState.h in Headers */,
+				D156E9A919272C01008704CC /* TDParseKit.h in Headers */,
+				D156E9AA19272C01008704CC /* TDParser.h in Headers */,
+				D156E9AB19272C01008704CC /* TDQuotedString.h in Headers */,
+				D156EA4419272FD2008704CC /* ffi_i386.h in Headers */,
+				D156E9AC19272C01008704CC /* TDQuoteState.h in Headers */,
+				D156EA4A19272FD2008704CC /* ffitarget_arm64.h in Headers */,
+				D156E9AD19272C01008704CC /* TDReader.h in Headers */,
+				D156E9AE19272C01008704CC /* TDRepetition.h in Headers */,
+				D156E9AF19272C01008704CC /* TDReservedWord.h in Headers */,
+				D156EA4619272FD2008704CC /* fficonfig_arm64.h in Headers */,
+				D156E9B019272C01008704CC /* TDScientificNumberState.h in Headers */,
+				D156E9B119272C01008704CC /* TDSequence.h in Headers */,
+				D156E9B219272C01008704CC /* TDSpecificChar.h in Headers */,
+				D156E9B319272C01008704CC /* TDSymbol.h in Headers */,
+				D156E9B419272C01008704CC /* TDSymbolNode.h in Headers */,
+				D156E9B519272C01008704CC /* TDSymbolRootNode.h in Headers */,
+				D156E9B619272C01008704CC /* TDSymbolState.h in Headers */,
+				D156E9B719272C01008704CC /* TDTerminal.h in Headers */,
+				D156E9B819272C01008704CC /* TDToken.h in Headers */,
+				D156EA4219272FD2008704CC /* ffi_arm64.h in Headers */,
+				D156EA4319272FD2008704CC /* ffi_armv7.h in Headers */,
+				D156E9B919272C01008704CC /* TDTokenArraySource.h in Headers */,
+				D156E9BA19272C01008704CC /* TDTokenAssembly.h in Headers */,
+				D156E9BB19272C01008704CC /* TDTokenizer.h in Headers */,
+				D156E9BC19272C01008704CC /* TDTokenizerState.h in Headers */,
+				D156E9BD19272C01008704CC /* TDTrack.h in Headers */,
+				D156E9BE19272C01008704CC /* TDTrackException.h in Headers */,
+				D156E9BF19272C01008704CC /* TDUppercaseWord.h in Headers */,
+				D156E9C019272C01008704CC /* TDWhitespaceState.h in Headers */,
+				D156E9C119272C02008704CC /* TDWord.h in Headers */,
+				D156E9C219272C02008704CC /* TDWordOrReservedState.h in Headers */,
+				D156E9C319272C02008704CC /* TDWordState.h in Headers */,
+				D156E97A19272B54008704CC /* MOBridgeSupportLibrary.h in Headers */,
+				D156E97B19272B55008704CC /* MOBridgeSupportParser.h in Headers */,
+				D156E97C19272B55008704CC /* MOBridgeSupportSymbol.h in Headers */,
+				D156E97D19272B55008704CC /* NSArray+MochaAdditions.h in Headers */,
+				D156E97E19272B55008704CC /* NSDictionary+MochaAdditions.h in Headers */,
+				D156E97F19272B55008704CC /* NSObject+MochaAdditions.h in Headers */,
+				D156EA4C19272FD2008704CC /* ffitarget_i386.h in Headers */,
+				D156EA4B19272FD2008704CC /* ffitarget_armv7.h in Headers */,
+				D156E98019272B55008704CC /* NSOrderedSet+MochaAdditions.h in Headers */,
+				D156E98119272B55008704CC /* Mocha.h in Headers */,
+				D156E98219272B55008704CC /* MochaDefines.h in Headers */,
+				D156E98319272B55008704CC /* MochaRuntime_Private.h in Headers */,
+				D156EA4919272FD2008704CC /* fficonfig_x86_64.h in Headers */,
+				D156E98419272B55008704CC /* MochaRuntime.h in Headers */,
+				D156E98519272B55008704CC /* MOAllocator.h in Headers */,
+				D156E98619272B55008704CC /* MOBox.h in Headers */,
+				D156E98719272B55008704CC /* MOClassDescription.h in Headers */,
+				D156EA4819272FD2008704CC /* fficonfig_i386.h in Headers */,
+				D156EA4719272FD2008704CC /* fficonfig_armv7.h in Headers */,
+				D156E98819272B55008704CC /* MOClosure_Private.h in Headers */,
+				D156E98919272B55008704CC /* MOClosure.h in Headers */,
+				D156E98A19272B55008704CC /* MOInstanceVariableDescription_Private.h in Headers */,
+				D156E98B19272B55008704CC /* MOInstanceVariableDescription.h in Headers */,
+				D156E98C19272B55008704CC /* MOJavaScriptObject.h in Headers */,
+				D156E98D19272B55008704CC /* MOMethod_Private.h in Headers */,
+				D156E98E19272B55008704CC /* MOMethod.h in Headers */,
+				D156E98F19272B55008704CC /* MOMethodDescription_Private.h in Headers */,
+				D156E99019272B55008704CC /* MOMethodDescription.h in Headers */,
+				D156E99119272B55008704CC /* MOObjCRuntime.h in Headers */,
+				D156E99219272B55008704CC /* MOPointer_Private.h in Headers */,
+				D156E99319272B55008704CC /* MOPointer.h in Headers */,
+				D156E99419272B55008704CC /* MOPointerValue.h in Headers */,
+				D156E99519272B55008704CC /* MOPropertyDescription.h in Headers */,
+				D156E99619272B55008704CC /* MOStruct.h in Headers */,
+				D156E99719272B55008704CC /* MOUndefined.h in Headers */,
+				D156E99819272B55008704CC /* MOFunctionArgument.h in Headers */,
+				D156E99919272B55008704CC /* MOMapTable.h in Headers */,
+				D156E99A19272B55008704CC /* MOUtilities.h in Headers */,
+				D156E95019272B03008704CC /* COSInterval.h in Headers */,
+				D156E95219272B03008704CC /* COScript+Interval.h in Headers */,
+				D156E95419272B03008704CC /* COSCIImageAdditions.h in Headers */,
+				D156E95E19272B03008704CC /* COSQuickCIFilter.h in Headers */,
+				D156E96019272B03008704CC /* MOBridgeSupportController.h in Headers */,
+				D156E96219272B03008704CC /* MOProtocolDescription_Private.h in Headers */,
+				D156EA4519272FD2008704CC /* ffi_x86_64.h in Headers */,
+				D156EA6019273152008704CC /* ffi.h in Headers */,
+				D156E96319272B03008704CC /* MOProtocolDescription.h in Headers */,
+				D156E96919272B03008704CC /* TDCollectionParser.h in Headers */,
+				D156E96B19272B03008704CC /* TDComment.h in Headers */,
+				D156E96D19272B03008704CC /* TDCommentState.h in Headers */,
+				D156E96F19272B03008704CC /* TDMultiLineCommentState.h in Headers */,
+				D156E97119272B04008704CC /* TDSingleLineCommentState.h in Headers */,
+				D156E97819272B04008704CC /* COSPreprocessor.h in Headers */,
+				D156EA4D19272FD2008704CC /* ffitarget_x86_64.h in Headers */,
+				D156E94D19272AD6008704CC /* COSScript+Spelunking.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
@@ -1219,6 +1664,42 @@
 			productReference = CC5FB7C20F1FDCCC00F4ECC2 /* coscript */;
 			productType = "com.apple.product-type.tool";
 		};
+		D156E91B19272523008704CC /* CocoaScript */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D156E93F19272523008704CC /* Build configuration list for PBXNativeTarget "CocoaScript" */;
+			buildPhases = (
+				D156E91819272523008704CC /* Sources */,
+				D156E91919272523008704CC /* Frameworks */,
+				D156E94C19272ABA008704CC /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D156EA64192731F2008704CC /* PBXTargetDependency */,
+			);
+			name = CocoaScript;
+			productName = CocoaScript;
+			productReference = D156E91C19272523008704CC /* libCocoaScript.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		D156E92919272523008704CC /* CocoaScriptTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D156E94019272523008704CC /* Build configuration list for PBXNativeTarget "CocoaScriptTests" */;
+			buildPhases = (
+				D156E92619272523008704CC /* Sources */,
+				D156E92719272523008704CC /* Frameworks */,
+				D156E92819272523008704CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D156E93119272523008704CC /* PBXTargetDependency */,
+			);
+			name = CocoaScriptTests;
+			productName = CocoaScriptTests;
+			productReference = D156E92A19272523008704CC /* CocoaScriptTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -1226,6 +1707,11 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0500;
+				TargetAttributes = {
+					D156E92919272523008704CC = {
+						TestTargetID = 8D15AC270486D014006FF6A4;
+					};
+				};
 			};
 			buildConfigurationList = C05733CB08A9546B00998B17 /* Build configuration list for PBXProject "Cocoa Script" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -1240,14 +1726,39 @@
 			);
 			mainGroup = 2A37F4AAFDCFA73011CA2CEA /* JSTalk */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = D156E94219272578008704CC /* Products */;
+					ProjectRef = D156E94119272578008704CC /* libffi.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				8D15AC270486D014006FF6A4 /* Cocoa Script Editor */,
 				CC5FB7C10F1FDCCC00F4ECC2 /* coscript tool */,
 				CC4143190F25254200E46669 /* Cocoa Script Framework */,
+				D156E91B19272523008704CC /* CocoaScript */,
+				D156E92919272523008704CC /* CocoaScriptTests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		D156E94719272578008704CC /* libffi.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libffi.a;
+			remoteRef = D156E94619272578008704CC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D156E94919272578008704CC /* ffi.dylib */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.dylib";
+			path = ffi.dylib;
+			remoteRef = D156E94819272578008704CC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		8D15AC2B0486D014006FF6A4 /* Resources */ = {
@@ -1279,6 +1790,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D156E92819272523008704CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D156E93819272523008704CC /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1483,6 +2002,103 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D156E91819272523008704CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D156E9DB19272C9E008704CC /* MOInstanceVariableDescription.m in Sources */,
+				D156E9DC19272C9E008704CC /* MOJavaScriptObject.m in Sources */,
+				D156E9DD19272C9E008704CC /* MOMethod.m in Sources */,
+				D156E9DE19272C9E008704CC /* MOMethodDescription.m in Sources */,
+				D156E9DF19272C9E008704CC /* MOObjCRuntime.m in Sources */,
+				D156E9E019272C9E008704CC /* MOPointer.m in Sources */,
+				D156E9E119272C9E008704CC /* MOPointerValue.m in Sources */,
+				D156E9E219272C9E008704CC /* MOPropertyDescription.m in Sources */,
+				D156E9E319272C9E008704CC /* MOProtocolDescription.m in Sources */,
+				D156E9E419272C9E008704CC /* MOStruct.m in Sources */,
+				D156E9E519272C9E008704CC /* MOUndefined.m in Sources */,
+				D156E9E619272C9E008704CC /* MOFunctionArgument.m in Sources */,
+				D156E9E719272C9E008704CC /* MOMapTable.m in Sources */,
+				D156E9E819272C9E008704CC /* MOUtilities.m in Sources */,
+				D156E9E919272C9E008704CC /* MarkerLineNumberView.m in Sources */,
+				D156E9EC19272C9E008704CC /* TETextUtils.m in Sources */,
+				D156E9EE19272C9E008704CC /* COSTarget.m in Sources */,
+				D156E9EF19272C9E008704CC /* TDAlternation.m in Sources */,
+				D156E9F019272C9E008704CC /* TDAny.m in Sources */,
+				D156E9F119272C9E008704CC /* TDAssembly.m in Sources */,
+				D156E9F219272C9E008704CC /* TDCaseInsensitiveLiteral.m in Sources */,
+				D156E9F319272C9E008704CC /* TDChar.m in Sources */,
+				D156E9F419272C9E008704CC /* TDCharacterAssembly.m in Sources */,
+				D156E9F519272C9E008704CC /* TDCollectionParser.m in Sources */,
+				D156E9F619272C9E008704CC /* TDComment.m in Sources */,
+				D156E9F719272C9E008704CC /* TDCommentState.m in Sources */,
+				D156E9F819272C9E008704CC /* TDDigit.m in Sources */,
+				D156E9F919272C9E008704CC /* TDEmpty.m in Sources */,
+				D156E9FA19272C9E008704CC /* TDLetter.m in Sources */,
+				D156E9FB19272C9E008704CC /* TDLiteral.m in Sources */,
+				D156E9FC19272C9E008704CC /* TDLowercaseWord.m in Sources */,
+				D156E9FD19272C9E008704CC /* TDMultiLineCommentState.m in Sources */,
+				D156E9FE19272C9E008704CC /* TDNonReservedWord.m in Sources */,
+				D156E9FF19272C9E008704CC /* TDNum.m in Sources */,
+				D156EA0019272C9E008704CC /* TDNumberState.m in Sources */,
+				D156EA0119272C9E008704CC /* TDParser.m in Sources */,
+				D156EA0219272C9E008704CC /* TDQuotedString.m in Sources */,
+				D156EA0319272C9E008704CC /* TDQuoteState.m in Sources */,
+				D156EA0419272C9E008704CC /* TDReader.m in Sources */,
+				D156EA0519272C9E008704CC /* TDRepetition.m in Sources */,
+				D156EA0619272C9E008704CC /* TDReservedWord.m in Sources */,
+				D156EA0719272C9E008704CC /* TDScientificNumberState.m in Sources */,
+				D156EA0819272C9E008704CC /* TDSequence.m in Sources */,
+				D156EA0919272C9E008704CC /* TDSingleLineCommentState.m in Sources */,
+				D156EA0A19272C9E008704CC /* TDSpecificChar.m in Sources */,
+				D156EA0B19272C9E008704CC /* TDSymbol.m in Sources */,
+				D156EA0C19272C9E008704CC /* TDSymbolNode.m in Sources */,
+				D156EA0D19272C9E008704CC /* TDSymbolRootNode.m in Sources */,
+				D156EA0E19272C9E008704CC /* TDSymbolState.m in Sources */,
+				D156EA0F19272C9E008704CC /* TDTerminal.m in Sources */,
+				D156EA1019272C9E008704CC /* TDToken.m in Sources */,
+				D156EA1119272C9E008704CC /* TDTokenArraySource.m in Sources */,
+				D156EA1219272C9E008704CC /* TDTokenAssembly.m in Sources */,
+				D156EA1319272C9E008704CC /* TDTokenizer.m in Sources */,
+				D156EA1419272C9E008704CC /* TDTokenizerState.m in Sources */,
+				D156EA1519272C9E008704CC /* TDTrack.m in Sources */,
+				D156EA1619272C9E008704CC /* TDTrackException.m in Sources */,
+				D156EA1719272C9E008704CC /* TDUppercaseWord.m in Sources */,
+				D156EA1819272C9E008704CC /* TDWhitespaceState.m in Sources */,
+				D156EA1919272C9E008704CC /* TDWord.m in Sources */,
+				D156EA1A19272C9E008704CC /* TDWordOrReservedState.m in Sources */,
+				D156EA1B19272C9E008704CC /* TDWordState.m in Sources */,
+				D156EA1C19272C9E008704CC /* COScript.m in Sources */,
+				D156EA1F19272C9E008704CC /* COSPreprocessor.m in Sources */,
+				D156EA2019272C9E008704CC /* cocoascript_tool.m in Sources */,
+				D156E9C519272C39008704CC /* COSInterval.m in Sources */,
+				D156E9C619272C39008704CC /* COScript+Interval.m in Sources */,
+				D156E9C919272C39008704CC /* COSImageTools.m in Sources */,
+				D156E9CD19272C39008704CC /* MOBridgeSupportController.m in Sources */,
+				D156E9CE19272C39008704CC /* MOBridgeSupportLibrary.m in Sources */,
+				D156E9CF19272C39008704CC /* MOBridgeSupportParser.m in Sources */,
+				D156E9D019272C39008704CC /* MOBridgeSupportSymbol.m in Sources */,
+				D156E9D119272C39008704CC /* NSArray+MochaAdditions.m in Sources */,
+				D156E9D219272C39008704CC /* NSDictionary+MochaAdditions.m in Sources */,
+				D156E9D319272C39008704CC /* NSObject+MochaAdditions.m in Sources */,
+				D156E9D419272C39008704CC /* NSOrderedSet+MochaAdditions.m in Sources */,
+				D156E9D519272C39008704CC /* Mocha.m in Sources */,
+				D156E9D619272C39008704CC /* MochaRuntime.m in Sources */,
+				D156E9D719272C39008704CC /* MOAllocator.m in Sources */,
+				D156E9D819272C39008704CC /* MOBox.m in Sources */,
+				D156E9D919272C39008704CC /* MOClassDescription.m in Sources */,
+				D156E9DA19272C39008704CC /* MOClosure.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D156E92619272523008704CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D156E93A19272523008704CC /* CocoaScriptTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -1490,6 +2106,16 @@
 			isa = PBXTargetDependency;
 			target = CC4143190F25254200E46669 /* Cocoa Script Framework */;
 			targetProxy = CC5064E50F4A164D00F4A952 /* PBXContainerItemProxy */;
+		};
+		D156E93119272523008704CC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D156E91B19272523008704CC /* CocoaScript */;
+			targetProxy = D156E93019272523008704CC /* PBXContainerItemProxy */;
+		};
+		D156EA64192731F2008704CC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "libffi-iOS";
+			targetProxy = D156EA63192731F2008704CC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1516,6 +2142,14 @@
 				CCC5B8C10F1EFA9700126722 /* English */,
 			);
 			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		D156E93619272523008704CC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D156E93719272523008704CC /* en */,
+			);
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -1711,6 +2345,130 @@
 			};
 			name = Release;
 		};
+		D156E93B19272523008704CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/CocoaScript.dst;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = src/framework/CocoaScript_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		D156E93C19272523008704CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				COPY_PHASE_STRIP = YES;
+				DSTROOT = /tmp/CocoaScript.dst;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = src/framework/CocoaScript_Prefix.pch;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D156E93D19272523008704CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Cocoa Script Editor.app/Contents/MacOS/Cocoa Script Editor";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CocoaScript/CocoaScript-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = "CocoaScriptTests/CocoaScriptTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		D156E93E19272523008704CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Cocoa Script Editor.app/Contents/MacOS/Cocoa Script Editor";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CocoaScript/CocoaScript-Prefix.pch";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = "CocoaScriptTests/CocoaScriptTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1746,6 +2504,24 @@
 			buildConfigurations = (
 				CC5FB7C40F1FDCCC00F4ECC2 /* Debug */,
 				CC5FB7C50F1FDCCC00F4ECC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D156E93F19272523008704CC /* Build configuration list for PBXNativeTarget "CocoaScript" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D156E93B19272523008704CC /* Debug */,
+				D156E93C19272523008704CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D156E94019272523008704CC /* Build configuration list for PBXNativeTarget "CocoaScriptTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D156E93D19272523008704CC /* Debug */,
+				D156E93E19272523008704CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

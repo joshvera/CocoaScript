@@ -6,8 +6,6 @@
 //  Copyright 2009 Kickingbear. All rights reserved.
 //
 
-#import <Cocoa/Cocoa.h>
-
 #import "COSOpenCLContext.h"
 
 @class JSTOpenCLKernel;

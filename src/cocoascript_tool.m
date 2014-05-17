@@ -1,4 +1,3 @@
-#import <Cocoa/Cocoa.h>
 #import "COSListener.h"
 #import "COScript.h"
 

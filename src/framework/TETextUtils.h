@@ -4,8 +4,6 @@
 // Copyright © 1996-2006, Mike Ferris.
 // All rights reserved.
 
-#import <Cocoa/Cocoa.h>
-
 // Identifying paragraph boundaries
 extern BOOL TE_IsParagraphSeparator(unichar uchar, NSString *str, unsigned index);
 extern BOOL TE_IsHardLineBreakUnichar(unichar uchar, NSString *str, unsigned index);

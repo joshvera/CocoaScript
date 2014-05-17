@@ -4,7 +4,11 @@
 
 //#define NS_BUILD_32_LIKE_64 1
 
-#ifdef __OBJC__
+#import <CoreGraphics/CoreGraphics.h>
+
+#ifdef __IPHONE_OS_VERSION_MIN_REQUIRED
+#import <UIKit/UIKit.h>
+#elif TARGET_OS_MAC
     #import <Cocoa/Cocoa.h>
 #endif
 

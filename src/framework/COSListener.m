@@ -37,7 +37,8 @@
 - (void)setupListener {
     NSString *myBundleId    = [[NSBundle mainBundle] bundleIdentifier];
     NSString *port          = [NSString stringWithFormat:@"%@.JSTalk", myBundleId];
-    
+
+#ifdef TARGET_OS_MAC
     _conn = [[NSConnection alloc] init];
     // Pick your poision:
     // "Without Independent Conversation Queueing, your app will be re-entered during upon a 2nd remote DO call if you return to the run loop"
@@ -47,14 +48,7 @@
     // We'll go with ICQ for now.
     [_conn setIndependentConversationQueueing:YES]; 
     [_conn setRootObject:_rootObject ? _rootObject : NSApp];
-    
-    if ([_conn registerName:port]) {
-        //NSLog(@"JSTalk listening on port %@", port);
-    }
-    else {
-        NSLog(@"CocoaScript could not listen on port %@", port);
-        _conn = nil;
-    }
+#endif
 }
 
 @end

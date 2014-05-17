@@ -6,7 +6,6 @@
 //  Copyright 2010 Flying Meat Inc. All rights reserved.
 //
 
-#import <Cocoa/Cocoa.h>
 #import <QuartzCore/QuartzCore.h>
 #import <CocoaScript/COScript.h>
 #import <CocoaScript/MOJavaScriptObject.h>

@@ -1,7 +1,6 @@
 // Originally Created by Guy English on 09-10-27.
 // Hacked to pieces by Gus Mueller on 2010-07-30
 
-#import <Cocoa/Cocoa.h>
 #import <OpenCL/opencl.h>
 
 @class COSOpenCLProgram;

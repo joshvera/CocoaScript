@@ -11,7 +11,10 @@
 #import "COSPreprocessor.h"
 #import "COScript+Interval.h"
 
+#ifdef TARGET_OS_MAC
 #import <ScriptingBridge/ScriptingBridge.h>
+#endif
+
 #import "MochaRuntime.h"
 #import "MOMethod.h"
 #import "MOUndefined.h"

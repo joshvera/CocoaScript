@@ -6,9 +6,6 @@
 //  Copyright 2009 Flying Meat Inc. All rights reserved.
 //
 
-#import <Cocoa/Cocoa.h>
-
-
 @interface COSPreprocessor : NSObject {
 
 }

@@ -6,7 +6,6 @@
 //  Copyright 2009 Flying Meat Inc. All rights reserved.
 //
 
-#import <Cocoa/Cocoa.h>
 #import <CocoaScript/COScript.h>
 
 @interface COSImageTools : NSObject {

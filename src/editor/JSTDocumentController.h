@@ -6,9 +6,6 @@
 //  Copyright 2010 Flying Meat Inc. All rights reserved.
 //
 
-#import <Cocoa/Cocoa.h>
-
-
 @interface JSTDocumentController : NSDocumentController {
 
 }

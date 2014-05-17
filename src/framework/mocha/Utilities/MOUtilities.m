@@ -297,7 +297,8 @@ JSValueRef MOFunctionInvoke(id function, JSContextRef ctx, size_t argumentCount,
         Class klass = [target class];
         
         // Override for Distributed Objects
-        if ([klass isSubclassOfClass:[NSDistantObject class]]) {
+        Class distantObjectClass = NSClassFromString(@"NSDistantObject");
+        if (distantObjectClass != nil && [klass isSubclassOfClass:distantObjectClass]) {
             return MOSelectorInvoke(target, selector, ctx, argumentCount, arguments, exception);
         }
         
