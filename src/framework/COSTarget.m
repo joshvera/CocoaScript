@@ -52,10 +52,6 @@
     COSTarget *t = [COSTarget targetWithJSFunction:jsFunction];
     
     [(id)self setTarget:t];
-
-    if ([self respondsToSelector:@selector(setAction:)]) {
-	    [(id)self setAction:[t action]];
-    }
     
     objc_setAssociatedObject(self, _cmd, t, OBJC_ASSOCIATION_RETAIN);
 }
