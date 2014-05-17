@@ -484,7 +484,6 @@
 		D156EA1919272C9E008704CC /* TDWord.m in Sources */ = {isa = PBXBuildFile; fileRef = CC66D7B4181A2A460039A0A5 /* TDWord.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		D156EA1A19272C9E008704CC /* TDWordOrReservedState.m in Sources */ = {isa = PBXBuildFile; fileRef = CC66D7B6181A2A460039A0A5 /* TDWordOrReservedState.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		D156EA1B19272C9E008704CC /* TDWordState.m in Sources */ = {isa = PBXBuildFile; fileRef = CC66D7B8181A2A460039A0A5 /* TDWordState.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		D156EA2019272C9E008704CC /* cocoascript_tool.m in Sources */ = {isa = PBXBuildFile; fileRef = CC66D8D7181A2FC10039A0A5 /* cocoascript_tool.m */; };
 		D156EA2219272ECC008704CC /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D156EA2119272ECC008704CC /* QuartzCore.framework */; };
 		D156EA2419272ED0008704CC /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D156EA2319272ED0008704CC /* JavaScriptCore.framework */; };
 		D156EA4219272FD2008704CC /* ffi_arm64.h in Headers */ = {isa = PBXBuildFile; fileRef = D156EA3619272FD2008704CC /* ffi_arm64.h */; };
@@ -2039,7 +2038,6 @@
 				D156EA1919272C9E008704CC /* TDWord.m in Sources */,
 				D156EA1A19272C9E008704CC /* TDWordOrReservedState.m in Sources */,
 				D156EA1B19272C9E008704CC /* TDWordState.m in Sources */,
-				D156EA2019272C9E008704CC /* cocoascript_tool.m in Sources */,
 				D156E9CD19272C39008704CC /* MOBridgeSupportController.m in Sources */,
 				D156E9CE19272C39008704CC /* MOBridgeSupportLibrary.m in Sources */,
 				D156E9CF19272C39008704CC /* MOBridgeSupportParser.m in Sources */,
