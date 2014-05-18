@@ -745,18 +745,13 @@ NSString * const MOAlreadyProtectedKey = @"moAlreadyProtectedKey";
 }
 
 - (void)throwJSException:(JSValueRef)exceptionJS {
-    id object = [self objectForJSValue:exceptionJS];
-    if ([object isKindOfClass:[NSException class]]) {
-        // Rethrow ObjC exceptions that were boxed within the runtime
-        @throw object;
+	NSException *exception = [self objectForJSValue:exceptionJS];
+ 
+    if (![exception isKindOfClass:[NSException class]]) {
+		exception = [self exceptionWithJSException:exceptionJS];
     }
-    else {
-        // Throw all other types of exceptions as an NSException
-        NSException *exception = [self exceptionWithJSException:exceptionJS];
-        if (exception != nil) {
-            @throw exception;
-        }
-    }
+
+    if ([exception isKindOfClass:[NSException class]]) @throw exception;
 }
 
 
