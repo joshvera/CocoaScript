@@ -2223,7 +2223,6 @@
 					"/opt/boxen/homebrew/Cellar/libffi/3.0.13/lib/libffi-3.0.13/include/**",
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
@@ -2254,7 +2253,6 @@
 					"/opt/boxen/homebrew/Cellar/libffi/3.0.13/lib/libffi-3.0.13/include/**",
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
