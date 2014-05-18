@@ -30,7 +30,7 @@
 #import <dlfcn.h>
 
 #if TARGET_OS_IPHONE
-#import "ffi.h"
+#import <ffi/ffi.h>
 #else
 #import <ffi/ffi.h>
 #endif

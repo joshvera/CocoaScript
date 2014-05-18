@@ -10,9 +10,9 @@
 #import <JavaScriptCore/JavaScriptCore.h>
 
 #if TARGET_OS_IPHONE
-#import "ffi.h"
+//#import "ffi.h"
 #else
-#import <ffi/ffi.h>
+//#import <ffi/ffi.h>
 #endif
 
 
