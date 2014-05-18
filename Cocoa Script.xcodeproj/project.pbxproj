@@ -317,7 +317,6 @@
 		CCE675E9182ED9C900DB1932 /* COSAlertWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = CCE675E7182ED9C900DB1932 /* COSAlertWindow.m */; };
 		CCF056181849A23C000C56F7 /* COSScript+Spelunking.h in Headers */ = {isa = PBXBuildFile; fileRef = CCF056161849A23C000C56F7 /* COSScript+Spelunking.h */; };
 		CCF056191849A23C000C56F7 /* COSScript+Spelunking.m in Sources */ = {isa = PBXBuildFile; fileRef = CCF056171849A23C000C56F7 /* COSScript+Spelunking.m */; };
-		CCF0561D184A884D000C56F7 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCF0561C184A884D000C56F7 /* OpenGL.framework */; };
 		CCF4DBE118296AB800ACB9EC /* Mocha.m in Sources */ = {isa = PBXBuildFile; fileRef = CC66D861181A2AE10039A0A5 /* Mocha.m */; };
 		CCF4DBE218296AB800ACB9EC /* MochaRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = CC66D865181A2AE10039A0A5 /* MochaRuntime.m */; };
 		CCF68F1E0F4E3E4F00925FCA /* JSTalkDocument.icns in Resources */ = {isa = PBXBuildFile; fileRef = CCF68F1D0F4E3E4F00925FCA /* JSTalkDocument.icns */; };
@@ -328,7 +327,6 @@
 		D156E93219272523008704CC /* libCocoaScript.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D156E91C19272523008704CC /* libCocoaScript.a */; };
 		D156E93819272523008704CC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D156E93619272523008704CC /* InfoPlist.strings */; };
 		D156E93A19272523008704CC /* CocoaScriptTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D156E93919272523008704CC /* CocoaScriptTests.m */; };
-		D156E94A19272581008704CC /* libffi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D156E94719272578008704CC /* libffi.a */; };
 		D156E96019272B03008704CC /* MOBridgeSupportController.h in Headers */ = {isa = PBXBuildFile; fileRef = CC66D840181A2AB10039A0A5 /* MOBridgeSupportController.h */; };
 		D156E96219272B03008704CC /* MOProtocolDescription_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = CC66D895181A2B0A0039A0A5 /* MOProtocolDescription_Private.h */; };
 		D156E96319272B03008704CC /* MOProtocolDescription.h in Headers */ = {isa = PBXBuildFile; fileRef = CC66D896181A2B0A0039A0A5 /* MOProtocolDescription.h */; };
@@ -486,21 +484,10 @@
 		D156EA1B19272C9E008704CC /* TDWordState.m in Sources */ = {isa = PBXBuildFile; fileRef = CC66D7B8181A2A460039A0A5 /* TDWordState.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		D156EA2219272ECC008704CC /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D156EA2119272ECC008704CC /* QuartzCore.framework */; };
 		D156EA2419272ED0008704CC /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D156EA2319272ED0008704CC /* JavaScriptCore.framework */; };
-		D156EA4219272FD2008704CC /* ffi_arm64.h in Headers */ = {isa = PBXBuildFile; fileRef = D156EA3619272FD2008704CC /* ffi_arm64.h */; };
-		D156EA4319272FD2008704CC /* ffi_armv7.h in Headers */ = {isa = PBXBuildFile; fileRef = D156EA3719272FD2008704CC /* ffi_armv7.h */; };
-		D156EA4419272FD2008704CC /* ffi_i386.h in Headers */ = {isa = PBXBuildFile; fileRef = D156EA3819272FD2008704CC /* ffi_i386.h */; };
-		D156EA4519272FD2008704CC /* ffi_x86_64.h in Headers */ = {isa = PBXBuildFile; fileRef = D156EA3919272FD2008704CC /* ffi_x86_64.h */; };
-		D156EA4619272FD2008704CC /* fficonfig_arm64.h in Headers */ = {isa = PBXBuildFile; fileRef = D156EA3A19272FD2008704CC /* fficonfig_arm64.h */; };
-		D156EA4719272FD2008704CC /* fficonfig_armv7.h in Headers */ = {isa = PBXBuildFile; fileRef = D156EA3B19272FD2008704CC /* fficonfig_armv7.h */; };
-		D156EA4819272FD2008704CC /* fficonfig_i386.h in Headers */ = {isa = PBXBuildFile; fileRef = D156EA3C19272FD2008704CC /* fficonfig_i386.h */; };
-		D156EA4919272FD2008704CC /* fficonfig_x86_64.h in Headers */ = {isa = PBXBuildFile; fileRef = D156EA3D19272FD2008704CC /* fficonfig_x86_64.h */; };
-		D156EA4A19272FD2008704CC /* ffitarget_arm64.h in Headers */ = {isa = PBXBuildFile; fileRef = D156EA3E19272FD2008704CC /* ffitarget_arm64.h */; };
-		D156EA4B19272FD2008704CC /* ffitarget_armv7.h in Headers */ = {isa = PBXBuildFile; fileRef = D156EA3F19272FD2008704CC /* ffitarget_armv7.h */; };
-		D156EA4C19272FD2008704CC /* ffitarget_i386.h in Headers */ = {isa = PBXBuildFile; fileRef = D156EA4019272FD2008704CC /* ffitarget_i386.h */; };
-		D156EA4D19272FD2008704CC /* ffitarget_x86_64.h in Headers */ = {isa = PBXBuildFile; fileRef = D156EA4119272FD2008704CC /* ffitarget_x86_64.h */; };
-		D156EA6019273152008704CC /* ffi.h in Headers */ = {isa = PBXBuildFile; fileRef = D156EA5F19273152008704CC /* ffi.h */; };
 		D156EA6619273212008704CC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D156EA6519273212008704CC /* CoreGraphics.framework */; };
 		D156EA67192732E3008704CC /* CocoaScript_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = CC66D826181A2A810039A0A5 /* CocoaScript_Prefix.pch */; };
+		D1721B871928314500E7D816 /* libffi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D1721B861928314500E7D816 /* libffi.a */; };
+		D1721B8A1928322900E7D816 /* libffi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D1721B861928314500E7D816 /* libffi.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -517,27 +504,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = D156E91B19272523008704CC;
 			remoteInfo = CocoaScript;
-		};
-		D156E94619272578008704CC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D156E94119272578008704CC /* libffi.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = DB13B1661849DF1E0010F42D;
-			remoteInfo = "libffi-iOS";
-		};
-		D156E94819272578008704CC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D156E94119272578008704CC /* libffi.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = DB13B1911849DF510010F42D;
-			remoteInfo = "libffi-Mac";
-		};
-		D156EA63192731F2008704CC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D156E94119272578008704CC /* libffi.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = DB13B1651849DF1E0010F42D;
-			remoteInfo = "libffi-iOS";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -797,7 +763,6 @@
 		CCE675E7182ED9C900DB1932 /* COSAlertWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = COSAlertWindow.m; path = src/framework/COSAlertWindow.m; sourceTree = "<group>"; };
 		CCF056161849A23C000C56F7 /* COSScript+Spelunking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "COSScript+Spelunking.h"; path = "src/framework/COSScript+Spelunking.h"; sourceTree = "<group>"; };
 		CCF056171849A23C000C56F7 /* COSScript+Spelunking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "COSScript+Spelunking.m"; path = "src/framework/COSScript+Spelunking.m"; sourceTree = "<group>"; };
-		CCF0561C184A884D000C56F7 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = ../../../../System/Library/Frameworks/OpenGL.framework; sourceTree = "<group>"; };
 		CCF68F1D0F4E3E4F00925FCA /* JSTalkDocument.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = JSTalkDocument.icns; path = res/images/JSTalkDocument.icns; sourceTree = "<group>"; };
 		D156E91C19272523008704CC /* libCocoaScript.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCocoaScript.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		D156E91D19272523008704CC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -807,23 +772,10 @@
 		D156E93519272523008704CC /* CocoaScriptTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CocoaScriptTests-Info.plist"; sourceTree = "<group>"; };
 		D156E93719272523008704CC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D156E93919272523008704CC /* CocoaScriptTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CocoaScriptTests.m; sourceTree = "<group>"; };
-		D156E94119272578008704CC /* libffi.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = libffi.xcodeproj; path = External/libffi/libffi.xcodeproj; sourceTree = "<group>"; };
 		D156EA2119272ECC008704CC /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		D156EA2319272ED0008704CC /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
-		D156EA3619272FD2008704CC /* ffi_arm64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ffi_arm64.h; sourceTree = "<group>"; };
-		D156EA3719272FD2008704CC /* ffi_armv7.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ffi_armv7.h; sourceTree = "<group>"; };
-		D156EA3819272FD2008704CC /* ffi_i386.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ffi_i386.h; sourceTree = "<group>"; };
-		D156EA3919272FD2008704CC /* ffi_x86_64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ffi_x86_64.h; sourceTree = "<group>"; };
-		D156EA3A19272FD2008704CC /* fficonfig_arm64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fficonfig_arm64.h; sourceTree = "<group>"; };
-		D156EA3B19272FD2008704CC /* fficonfig_armv7.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fficonfig_armv7.h; sourceTree = "<group>"; };
-		D156EA3C19272FD2008704CC /* fficonfig_i386.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fficonfig_i386.h; sourceTree = "<group>"; };
-		D156EA3D19272FD2008704CC /* fficonfig_x86_64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fficonfig_x86_64.h; sourceTree = "<group>"; };
-		D156EA3E19272FD2008704CC /* ffitarget_arm64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ffitarget_arm64.h; sourceTree = "<group>"; };
-		D156EA3F19272FD2008704CC /* ffitarget_armv7.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ffitarget_armv7.h; sourceTree = "<group>"; };
-		D156EA4019272FD2008704CC /* ffitarget_i386.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ffitarget_i386.h; sourceTree = "<group>"; };
-		D156EA4119272FD2008704CC /* ffitarget_x86_64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ffitarget_x86_64.h; sourceTree = "<group>"; };
-		D156EA5F19273152008704CC /* ffi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ffi.h; path = "External/libffi/x86_64-apple-darwin13.2.0/include/ffi.h"; sourceTree = "<group>"; };
 		D156EA6519273212008704CC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		D1721B861928314500E7D816 /* libffi.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libffi.a; path = ../../../../../../opt/boxen/homebrew/Cellar/libffi/3.0.13/lib/libffi.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -832,6 +784,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D15AC340486D014006FF6A4 /* Cocoa.framework in Frameworks */,
+				D1721B871928314500E7D816 /* libffi.a in Frameworks */,
 				CCC5B8A50F1EFA6D00126722 /* JavaScriptCore.framework in Frameworks */,
 				CC0EC3290F226F550094F69D /* ScriptingBridge.framework in Frameworks */,
 				CC1323850F24FF9D0032FEB8 /* Carbon.framework in Frameworks */,
@@ -846,7 +799,6 @@
 				CC4143500F25261000E46669 /* Carbon.framework in Frameworks */,
 				CC4143510F25261100E46669 /* ScriptingBridge.framework in Frameworks */,
 				CC4143520F25261200E46669 /* JavaScriptCore.framework in Frameworks */,
-				CCF0561D184A884D000C56F7 /* OpenGL.framework in Frameworks */,
 				CC4143530F25261300E46669 /* Cocoa.framework in Frameworks */,
 				CC86430D163B29E600908427 /* QuartzCore.framework in Frameworks */,
 				CC86430F163B29F500908427 /* OpenCL.framework in Frameworks */,
@@ -871,8 +823,8 @@
 				D156EA6619273212008704CC /* CoreGraphics.framework in Frameworks */,
 				D156EA2419272ED0008704CC /* JavaScriptCore.framework in Frameworks */,
 				D156EA2219272ECC008704CC /* QuartzCore.framework in Frameworks */,
-				D156E94A19272581008704CC /* libffi.a in Frameworks */,
 				D156E91E19272523008704CC /* Foundation.framework in Frameworks */,
+				D1721B8A1928322900E7D816 /* libffi.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -964,13 +916,10 @@
 		2A37F4C3FDCFA73011CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D1721B861928314500E7D816 /* libffi.a */,
 				D156EA6519273212008704CC /* CoreGraphics.framework */,
-				D156EA5F19273152008704CC /* ffi.h */,
-				D156EA3519272FD2008704CC /* libffi headers */,
 				D156EA2319272ED0008704CC /* JavaScriptCore.framework */,
 				D156EA2119272ECC008704CC /* QuartzCore.framework */,
-				D156E94119272578008704CC /* libffi.xcodeproj */,
-				CCF0561C184A884D000C56F7 /* OpenGL.framework */,
 				CC86430E163B29F500908427 /* OpenCL.framework */,
 				CC86430C163B29E600908427 /* QuartzCore.framework */,
 				CC1323840F24FF9D0032FEB8 /* Carbon.framework */,
@@ -1336,35 +1285,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		D156E94219272578008704CC /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				D156E94719272578008704CC /* libffi.a */,
-				D156E94919272578008704CC /* ffi.dylib */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		D156EA3519272FD2008704CC /* libffi headers */ = {
-			isa = PBXGroup;
-			children = (
-				D156EA3619272FD2008704CC /* ffi_arm64.h */,
-				D156EA3719272FD2008704CC /* ffi_armv7.h */,
-				D156EA3819272FD2008704CC /* ffi_i386.h */,
-				D156EA3919272FD2008704CC /* ffi_x86_64.h */,
-				D156EA3A19272FD2008704CC /* fficonfig_arm64.h */,
-				D156EA3B19272FD2008704CC /* fficonfig_armv7.h */,
-				D156EA3C19272FD2008704CC /* fficonfig_i386.h */,
-				D156EA3D19272FD2008704CC /* fficonfig_x86_64.h */,
-				D156EA3E19272FD2008704CC /* ffitarget_arm64.h */,
-				D156EA3F19272FD2008704CC /* ffitarget_armv7.h */,
-				D156EA4019272FD2008704CC /* ffitarget_i386.h */,
-				D156EA4119272FD2008704CC /* ffitarget_x86_64.h */,
-			);
-			name = "libffi headers";
-			path = External/libffi/darwin_ios/include;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -1500,13 +1420,10 @@
 				D156E9A919272C01008704CC /* TDParseKit.h in Headers */,
 				D156E9AA19272C01008704CC /* TDParser.h in Headers */,
 				D156E9AB19272C01008704CC /* TDQuotedString.h in Headers */,
-				D156EA4419272FD2008704CC /* ffi_i386.h in Headers */,
 				D156E9AC19272C01008704CC /* TDQuoteState.h in Headers */,
-				D156EA4A19272FD2008704CC /* ffitarget_arm64.h in Headers */,
 				D156E9AD19272C01008704CC /* TDReader.h in Headers */,
 				D156E9AE19272C01008704CC /* TDRepetition.h in Headers */,
 				D156E9AF19272C01008704CC /* TDReservedWord.h in Headers */,
-				D156EA4619272FD2008704CC /* fficonfig_arm64.h in Headers */,
 				D156E9B019272C01008704CC /* TDScientificNumberState.h in Headers */,
 				D156E9B119272C01008704CC /* TDSequence.h in Headers */,
 				D156E9B219272C01008704CC /* TDSpecificChar.h in Headers */,
@@ -1516,8 +1433,6 @@
 				D156E9B619272C01008704CC /* TDSymbolState.h in Headers */,
 				D156E9B719272C01008704CC /* TDTerminal.h in Headers */,
 				D156E9B819272C01008704CC /* TDToken.h in Headers */,
-				D156EA4219272FD2008704CC /* ffi_arm64.h in Headers */,
-				D156EA4319272FD2008704CC /* ffi_armv7.h in Headers */,
 				D156E9B919272C01008704CC /* TDTokenArraySource.h in Headers */,
 				D156E9BA19272C01008704CC /* TDTokenAssembly.h in Headers */,
 				D156E9BB19272C01008704CC /* TDTokenizer.h in Headers */,
@@ -1535,18 +1450,13 @@
 				D156E97D19272B55008704CC /* NSArray+MochaAdditions.h in Headers */,
 				D156E97E19272B55008704CC /* NSDictionary+MochaAdditions.h in Headers */,
 				D156E97F19272B55008704CC /* NSObject+MochaAdditions.h in Headers */,
-				D156EA4C19272FD2008704CC /* ffitarget_i386.h in Headers */,
-				D156EA4B19272FD2008704CC /* ffitarget_armv7.h in Headers */,
 				D156E98019272B55008704CC /* NSOrderedSet+MochaAdditions.h in Headers */,
 				D156E98219272B55008704CC /* MochaDefines.h in Headers */,
 				D156E98319272B55008704CC /* MochaRuntime_Private.h in Headers */,
-				D156EA4919272FD2008704CC /* fficonfig_x86_64.h in Headers */,
 				D156E98419272B55008704CC /* MochaRuntime.h in Headers */,
 				D156E98519272B55008704CC /* MOAllocator.h in Headers */,
 				D156E98619272B55008704CC /* MOBox.h in Headers */,
 				D156E98719272B55008704CC /* MOClassDescription.h in Headers */,
-				D156EA4819272FD2008704CC /* fficonfig_i386.h in Headers */,
-				D156EA4719272FD2008704CC /* fficonfig_armv7.h in Headers */,
 				D156E98819272B55008704CC /* MOClosure_Private.h in Headers */,
 				D156E98919272B55008704CC /* MOClosure.h in Headers */,
 				D156E98A19272B55008704CC /* MOInstanceVariableDescription_Private.h in Headers */,
@@ -1568,15 +1478,12 @@
 				D156E99A19272B55008704CC /* MOUtilities.h in Headers */,
 				D156E96019272B03008704CC /* MOBridgeSupportController.h in Headers */,
 				D156E96219272B03008704CC /* MOProtocolDescription_Private.h in Headers */,
-				D156EA4519272FD2008704CC /* ffi_x86_64.h in Headers */,
-				D156EA6019273152008704CC /* ffi.h in Headers */,
 				D156E96319272B03008704CC /* MOProtocolDescription.h in Headers */,
 				D156E96919272B03008704CC /* TDCollectionParser.h in Headers */,
 				D156E96B19272B03008704CC /* TDComment.h in Headers */,
 				D156E96D19272B03008704CC /* TDCommentState.h in Headers */,
 				D156E96F19272B03008704CC /* TDMultiLineCommentState.h in Headers */,
 				D156E97119272B04008704CC /* TDSingleLineCommentState.h in Headers */,
-				D156EA4D19272FD2008704CC /* ffitarget_x86_64.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1648,7 +1555,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				D156EA64192731F2008704CC /* PBXTargetDependency */,
 			);
 			name = CocoaScript;
 			productName = CocoaScript;
@@ -1699,12 +1605,6 @@
 			);
 			mainGroup = 2A37F4AAFDCFA73011CA2CEA /* JSTalk */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = D156E94219272578008704CC /* Products */;
-					ProjectRef = D156E94119272578008704CC /* libffi.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				8D15AC270486D014006FF6A4 /* Cocoa Script Editor */,
@@ -1715,23 +1615,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		D156E94719272578008704CC /* libffi.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libffi.a;
-			remoteRef = D156E94619272578008704CC /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		D156E94919272578008704CC /* ffi.dylib */ = {
-			isa = PBXReferenceProxy;
-			fileType = "compiled.mach-o.dylib";
-			path = ffi.dylib;
-			remoteRef = D156E94819272578008704CC /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		8D15AC2B0486D014006FF6A4 /* Resources */ = {
@@ -2076,11 +1959,6 @@
 			target = D156E91B19272523008704CC /* CocoaScript */;
 			targetProxy = D156E93019272523008704CC /* PBXContainerItemProxy */;
 		};
-		D156EA64192731F2008704CC /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "libffi-iOS";
-			targetProxy = D156EA63192731F2008704CC /* PBXContainerItemProxy */;
-		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -2133,6 +2011,10 @@
 				INFOPLIST_FILE = res/Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/boxen/homebrew/Cellar/libffi/3.0.13/lib,
+				);
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CFLAGS = "-DDEBUG";
 				OTHER_LDFLAGS = "-lffi";
@@ -2149,6 +2031,10 @@
 				GCC_PREFIX_HEADER = src/framework/CocoaScript_Prefix.pch;
 				INFOPLIST_FILE = res/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/boxen/homebrew/Cellar/libffi/3.0.13/lib,
+				);
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-lffi";
 				PRODUCT_NAME = "Cocoa Script Editor";
@@ -2331,7 +2217,15 @@
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/boxen/homebrew/Cellar/libffi/3.0.13/lib,
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
@@ -2356,7 +2250,15 @@
 				GCC_PREFIX_HEADER = src/framework/CocoaScript_Prefix.pch;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/boxen/homebrew/Cellar/libffi/3.0.13/lib,
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
