@@ -55,8 +55,8 @@ void JSTUncaughtExceptionHandler(NSException *exception) {
     // have all the services menus get updated.
     //NSUpdateDynamicServices();
     
-    [COScript loadPlugins]; // some guys will setup custom UI in the app.
-    
+//    [COScript loadPlugins]; // some guys will setup custom UI in the app.
+
     
     
     [[NSAppleEventManager sharedAppleEventManager] setEventHandler:self andSelector:@selector(getUrl:withReplyEvent:) forEventClass:kInternetEventClass andEventID:kAEGetURL];

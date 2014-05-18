@@ -41,7 +41,7 @@
 + (void)loadBridgeSupportFileAtURL:(NSURL*)url;
 + (void)listen;
 + (void)resetPlugins;
-+ (void)loadPlugins;
+//+ (void)loadPlugins;
 + (void)setShouldLoadJSTPlugins:(BOOL)b;
 + (id)application:(NSString*)app;
 + (id)app:(NSString*)app;

@@ -486,6 +486,8 @@
 		D156EA2419272ED0008704CC /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D156EA2319272ED0008704CC /* JavaScriptCore.framework */; };
 		D156EA6619273212008704CC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D156EA6519273212008704CC /* CoreGraphics.framework */; };
 		D156EA67192732E3008704CC /* CocoaScript_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = CC66D826181A2A810039A0A5 /* CocoaScript_Prefix.pch */; };
+		D16E53DE19294DFC0070CBC6 /* libffi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D16E53DB19294DE60070CBC6 /* libffi.a */; };
+		D16E53E219294F020070CBC6 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D16E53E119294F020070CBC6 /* OpenGL.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -502,6 +504,20 @@
 			proxyType = 1;
 			remoteGlobalIDString = D156E91B19272523008704CC;
 			remoteInfo = CocoaScript;
+		};
+		D16E53DA19294DE60070CBC6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D16E53D519294DE60070CBC6 /* libffi.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DB13B1661849DF1E0010F42D;
+			remoteInfo = "libffi-iOS";
+		};
+		D16E53DC19294DE60070CBC6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D16E53D519294DE60070CBC6 /* libffi.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DB13B1911849DF510010F42D;
+			remoteInfo = "libffi-Mac";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -773,6 +789,8 @@
 		D156EA2119272ECC008704CC /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		D156EA2319272ED0008704CC /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
 		D156EA6519273212008704CC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		D16E53D519294DE60070CBC6 /* libffi.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = libffi.xcodeproj; path = External/libffi/libffi.xcodeproj; sourceTree = "<group>"; };
+		D16E53E119294F020070CBC6 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -792,6 +810,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D16E53E219294F020070CBC6 /* OpenGL.framework in Frameworks */,
 				CC4143500F25261000E46669 /* Carbon.framework in Frameworks */,
 				CC4143510F25261100E46669 /* ScriptingBridge.framework in Frameworks */,
 				CC4143520F25261200E46669 /* JavaScriptCore.framework in Frameworks */,
@@ -816,6 +835,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D16E53DE19294DFC0070CBC6 /* libffi.a in Frameworks */,
 				D156EA6619273212008704CC /* CoreGraphics.framework in Frameworks */,
 				D156EA2419272ED0008704CC /* JavaScriptCore.framework in Frameworks */,
 				D156EA2219272ECC008704CC /* QuartzCore.framework in Frameworks */,
@@ -911,6 +931,8 @@
 		2A37F4C3FDCFA73011CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D16E53E119294F020070CBC6 /* OpenGL.framework */,
+				D16E53D519294DE60070CBC6 /* libffi.xcodeproj */,
 				D156EA6519273212008704CC /* CoreGraphics.framework */,
 				D156EA2319272ED0008704CC /* JavaScriptCore.framework */,
 				D156EA2119272ECC008704CC /* QuartzCore.framework */,
@@ -1279,6 +1301,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		D16E53D619294DE60070CBC6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D16E53DB19294DE60070CBC6 /* libffi.a */,
+				D16E53DD19294DE60070CBC6 /* ffi.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -1599,6 +1630,12 @@
 			);
 			mainGroup = 2A37F4AAFDCFA73011CA2CEA /* JSTalk */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = D16E53D619294DE60070CBC6 /* Products */;
+					ProjectRef = D16E53D519294DE60070CBC6 /* libffi.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				8D15AC270486D014006FF6A4 /* Cocoa Script Editor */,
@@ -1609,6 +1646,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		D16E53DB19294DE60070CBC6 /* libffi.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libffi.a;
+			remoteRef = D16E53DA19294DE60070CBC6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D16E53DD19294DE60070CBC6 /* ffi.dylib */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.dylib";
+			path = ffi.dylib;
+			remoteRef = D16E53DC19294DE60070CBC6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		8D15AC2B0486D014006FF6A4 /* Resources */ = {
@@ -2214,6 +2268,8 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"External/libffi/darwin_ios/**",
+					"External/libffi/darwin_common/**",
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				OTHER_LDFLAGS = "-ObjC";
@@ -2243,7 +2299,8 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
-					"/opt/boxen/homebrew/Cellar/libffi/3.0.13/lib/libffi-3.0.13/include/**",
+					"External/libffi/darwin_ios/**",
+					"External/libffi/darwin_common/**",
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				OTHER_LDFLAGS = "-ObjC";

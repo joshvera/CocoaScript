@@ -55,8 +55,8 @@ static NSMutableArray *JSTalkPluginList;
         
         [self setEnv:[NSMutableDictionary dictionary]];
         [self setShouldPreprocess:YES];
-        
-        [self addExtrasToRuntime];
+//        
+//        [self addExtrasToRuntime];
 	}
     
 	return self;
@@ -125,10 +125,10 @@ NSString *currentCOScriptThreadIdentifier = @"org.jstalk.currentCOScriptHack";
 
 - (id)executeString:(NSString*)str baseURL:(NSURL*)base {
     
-    if (!JSTalkPluginList && JSTalkShouldLoadJSTPlugins) {
-        [COScript loadPlugins];
-    }
-    
+//    if (!JSTalkPluginList && JSTalkShouldLoadJSTPlugins) {
+//        [COScript loadPlugins];
+//    }
+
     if ([self shouldPreprocess]) {
         
         if (!base && [[_env objectForKey:@"scriptURL"] isKindOfClass:[NSURL class]]) {
