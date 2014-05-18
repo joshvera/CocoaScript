@@ -486,8 +486,6 @@
 		D156EA2419272ED0008704CC /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D156EA2319272ED0008704CC /* JavaScriptCore.framework */; };
 		D156EA6619273212008704CC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D156EA6519273212008704CC /* CoreGraphics.framework */; };
 		D156EA67192732E3008704CC /* CocoaScript_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = CC66D826181A2A810039A0A5 /* CocoaScript_Prefix.pch */; };
-		D1721B871928314500E7D816 /* libffi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D1721B861928314500E7D816 /* libffi.a */; };
-		D1721B8A1928322900E7D816 /* libffi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D1721B861928314500E7D816 /* libffi.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -775,7 +773,6 @@
 		D156EA2119272ECC008704CC /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		D156EA2319272ED0008704CC /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
 		D156EA6519273212008704CC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
-		D1721B861928314500E7D816 /* libffi.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libffi.a; path = ../../../../../../opt/boxen/homebrew/Cellar/libffi/3.0.13/lib/libffi.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -784,7 +781,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D15AC340486D014006FF6A4 /* Cocoa.framework in Frameworks */,
-				D1721B871928314500E7D816 /* libffi.a in Frameworks */,
 				CCC5B8A50F1EFA6D00126722 /* JavaScriptCore.framework in Frameworks */,
 				CC0EC3290F226F550094F69D /* ScriptingBridge.framework in Frameworks */,
 				CC1323850F24FF9D0032FEB8 /* Carbon.framework in Frameworks */,
@@ -824,7 +820,6 @@
 				D156EA2419272ED0008704CC /* JavaScriptCore.framework in Frameworks */,
 				D156EA2219272ECC008704CC /* QuartzCore.framework in Frameworks */,
 				D156E91E19272523008704CC /* Foundation.framework in Frameworks */,
-				D1721B8A1928322900E7D816 /* libffi.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -916,7 +911,6 @@
 		2A37F4C3FDCFA73011CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D1721B861928314500E7D816 /* libffi.a */,
 				D156EA6519273212008704CC /* CoreGraphics.framework */,
 				D156EA2319272ED0008704CC /* JavaScriptCore.framework */,
 				D156EA2119272ECC008704CC /* QuartzCore.framework */,
@@ -2220,7 +2214,6 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
-					"/opt/boxen/homebrew/Cellar/libffi/3.0.13/lib/libffi-3.0.13/include/**",
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				OTHER_LDFLAGS = "-ObjC";
